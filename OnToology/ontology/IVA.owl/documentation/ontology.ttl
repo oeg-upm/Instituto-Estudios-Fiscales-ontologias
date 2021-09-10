@@ -1,0 +1,514 @@
+@prefix : <http://vocab.linkeddata.es/def/hacienda/iva#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://vocab.linkeddata.es/def/hacienda/iva> .
+
+<http://vocab.linkeddata.es/def/hacienda/iva> rdf:type owl:Ontology ;
+                                               owl:versionIRI <http://vocab.linkeddata.es/def/hacienda/iva/1.0.0> ;
+                                               <http://purl.org/dc/elements/1.1/creator> "Alberto Megina Gonzalo (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                         "Mario de Lucas García (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                         "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
+                                               <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/def/hacienda/iva" ;
+                                               <http://purl.org/dc/elements/1.1/title> "Ontología que modeliza el Impuesto sobre el Valor Añadido siguiendo el marco impuesto por la Ley 37/1992 sobre el Valor Añadido (LIVA) y el reglamento del impuesto RD 1624/1992 (RIVA)."@es ;
+                                               <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/def/hacienda/iva.owl" ;
+                                               <http://purl.org/dc/terms/issued> "2021-07-20" ;
+                                               <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
+                                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "iva" ;
+                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/def/hacienda/iva#" ;
+                                               rdfs:comment "Esta ontología se ha creado en el marco de una colaboración entre el Ontology Engineering Group y los Institutos Fiscales de Hacienda" ;
+                                               owl:versionInfo "First official release"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#acogidoA
+:acogidoA rdf:type owl:ObjectProperty ;
+          rdfs:domain :Sujeto_Pasivo ;
+          rdfs:range :Regímen_Especial ;
+          rdfs:comment "Relación entre Sujeto Pasivo y Régimen Especial. Modela una relación de inclusión de un Sujeto Pasivo dentro de un determinado régimen especial por cumplir los requisitos exigidos."@es ;
+          rdfs:label "Acogido a un Regímen Especial"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#cometeInfraccion
+:cometeInfraccion rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Sujeto_Pasivo ;
+                  rdfs:range :Infracción ;
+                  rdfs:comment "Relación entre Sujeto Pasivo e Infracción. Modela la acción de cometer una infracción tributaria por parte de una Persona."@es ;
+                  rdfs:label "Comete"@es ;
+                  rdfs:seeAlso """MEMENTO IVA 11080
+MIVA nº 7450"""@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#contieneItem
+:contieneItem rdf:type owl:ObjectProperty ;
+              rdfs:domain :Factura ;
+              rdfs:range :Item ;
+              rdfs:comment "Relación entre  Factura e Item. Modela la acción de contener un item dentro de una determinada Factura."@es ;
+              rdfs:label "Contiene Item"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#emiteFactura
+:emiteFactura rdf:type owl:ObjectProperty ;
+              rdfs:domain :Sujeto_Pasivo ;
+              rdfs:range :Factura ;
+              rdfs:comment "Relación entre Sujeto Pasivo y Factura. Modela la relación de emitir una factura por parte de una persona."@es ;
+              rdfs:label "Emite"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#realizaOperación
+:realizaOperación rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Sujeto_Pasivo ;
+                  rdfs:range :Operación ;
+                  rdfs:comment "Relación entre Sujeto Pasivo y Operación. Modela la realización de una operación por parte de un sujeto pasivo."@es ;
+                  rdfs:label "Realiza operación"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#recibeFactura
+:recibeFactura rdf:type owl:ObjectProperty ;
+               rdfs:domain :Receptor ;
+               rdfs:range :Factura ;
+               rdfs:comment "Relación entre Recepto y Factura. Modela la acción en la que un receptor recibe una determinada factura."@es ;
+               rdfs:label "Recibe"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#tieneCabecera
+:tieneCabecera rdf:type owl:ObjectProperty ;
+               rdfs:domain :Factura ;
+               rdfs:range :Cabecera ;
+               rdfs:comment "Relación entre Factura y Cabecera. Modela la relación de pertenencia de una cabecera a una factura."@es ;
+               rdfs:label "Tiene cabecera"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#tieneLugarRealización
+:tieneLugarRealización rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Factura ;
+                       rdfs:range :Lugar_Realización ;
+                       rdfs:comment "Relación entre Factura y Lugar de realización. Indica un determinado lugar donde se emitió la factura."@es ;
+                       rdfs:label "Lugar de realización"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#tieneObligación
+:tieneObligación rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Sujeto_Pasivo ;
+                 rdfs:range :Obligación ;
+                 rdfs:comment "Relación entre Sujeto Pasivo y Obligación. Modela la existencia de obligaciones a tratar por parte de los sujetos pasivos del IVA."@es ;
+                 rdfs:label "Tiene Obligación"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#tieneRol
+:tieneRol rdf:type owl:ObjectProperty ;
+          rdfs:domain :Persona ;
+          rdfs:range :Rol ;
+          rdfs:comment "Relación entre Persona y Rol. Modela la relación de rol con persona de forma que una persona pueda realizar el rol de sujeto pasivo o de receptor en un determinado momento."@es ;
+          rdfs:label "Tiene rol"@es .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#actividad_empresarial
+:actividad_empresarial rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Persona ;
+                       rdfs:range xsd:string ;
+                       rdfs:comment "Descripción del código de la actividad empresarial de una persona en función del CNAE"@es ;
+                       rdfs:label "Actividad empresarial"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#baseImponible
+:baseImponible rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Item ;
+               rdfs:range owl:real ;
+               rdfs:comment "La base imponible es el elemento cuantitativo del hecho imponible sobre el que se aplica el tipo impositivo paracalcular la cuota tributaria."@es ;
+               rdfs:label "Base Imponible"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#cantidad
+:cantidad rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Item ;
+          rdfs:range xsd:integer ;
+          rdfs:comment "Número de productos iguales contenidos en la factura."@es ;
+          rdfs:label "Cantidad"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#codigoMoneda
+:codigoMoneda rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Cabecera ;
+              rdfs:range rdfs:Literal ;
+              rdfs:comment "Código indicativo de la moneda utilizada."@es ;
+              rdfs:label "Código moneda"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#descripción
+:descripción rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Item ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Comentario general acerca de la factura."@es ;
+             rdfs:label "Descripción"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#descuento
+:descuento rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Item ;
+           rdfs:range owl:real ;
+           rdfs:comment "Indicador de un descuento aplicado al item."@es ;
+           rdfs:label "Descuento"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#dirección
+:dirección rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Persona ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Dirección física de una persona."@es ;
+           rdfs:label "Dirección"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#fecha_expedición
+:fecha_expedición rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Cabecera ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "Indicador de la fecha en la que se realizó la factura."@es ;
+                  rdfs:label "Fecha de expedición"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#identificador
+:identificador rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Cabecera ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Identificador único de una factura."@es ;
+               rdfs:label "Identificador"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#importe
+:importe rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Item ;
+         rdfs:range owl:real ;
+         rdfs:comment "Coste total de un conjunto de items."@es ;
+         rdfs:label "Importe"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#lugar_expedición
+:lugar_expedición rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Cabecera ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "Lugar donde se realizó la factura."@es ;
+                  rdfs:label "Lugar de expedición"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#modalidad
+:modalidad rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Cabecera ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Indicador de la modalidad concreta de una factura."@es ;
+           rdfs:label "Modalidad"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#nombre
+:nombre rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Persona ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Indicador del nombre de una persona."@es ;
+        rdfs:label "Nombre"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#precio_unitario
+:precio_unitario rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf owl:topDataProperty ;
+                 rdfs:domain :Item ;
+                 rdfs:range owl:real ;
+                 rdfs:comment "Precio individual de cada item."@es ;
+                 rdfs:label "Precio unitario"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#tipoImpositivo
+:tipoImpositivo rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Item ;
+                rdfs:range owl:real ;
+                rdfs:comment "Porcentaje aplicado al coste del item. Existen 3 tipos impositivos: tipo general (21%), reducido (10%)  y superreducido (4%)."@es ;
+                rdfs:label "Tipo impositivo"@es ;
+                rdfs:seeAlso """MEMENTO IVA 10140
+MIVA nº2000 s."""@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#tipo_operación
+:tipo_operación rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Operación_Sujeta ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Indicador del tipo de operación de una operación sujeta."@es ;
+                rdfs:label "Tipo de operación"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#version
+:version rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Cabecera ;
+         rdfs:range owl:real ;
+         rdfs:comment "Indicador del número de versión de factura electrónica utilizada."@es ;
+         rdfs:label "Versión"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Cabecera
+:Cabecera rdf:type owl:Class ;
+          rdfs:comment "Forma parte de la estructura de una factura electrónica, en base al modelo del Ministerio de Asuntos Económicos y Transformación Digital, y contiene los datos globales e identificativos de una factura."@es ;
+          rdfs:label "Cabecera"@es ;
+          rdfs:seeAlso "https://www.facturae.gob.es/formato/Documents/EspanolFacturae3_0.pdf"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Deducción
+:Deducción rdf:type owl:Class ;
+           rdfs:subClassOf :Obligación_Particular ;
+           rdfs:label "Deducción"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Devolución
+:Devolución rdf:type owl:Class ;
+            rdfs:subClassOf :Obligación_Particular ;
+            rdfs:label "Devolución"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Factura
+:Factura rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :contieneItem ;
+                           owl:allValuesFrom :Item
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneCabecera ;
+                           owl:allValuesFrom :Cabecera
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneLugarRealización ;
+                           owl:allValuesFrom :Lugar_Realización
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :contieneItem ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Item
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneCabecera ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Cabecera
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneLugarRealización ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Lugar_Realización
+                         ] ;
+         rdfs:comment "Modelado de una factura , en base a las guías del Ministerio de Asuntos Económicos y Transformación Digital, y contiene los elementos esenciales: Descripción global, recogida en la clase Cabecera y los conceptos contenidos en la factura, que están recogidos en la clase Item."@es ;
+         rdfs:label "Factura"@es ;
+         rdfs:seeAlso "https://www.facturae.gob.es/formato/Documents/EspanolFacturae3_0.pdf"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Infracción
+:Infracción rdf:type owl:Class ;
+            rdfs:comment "Consiste en la transgresión de una norma fiscal por parte de una persona física o jurídica u otra entidad. Se calificarán y sancionarán conforme a lo establecido en la Ley General Tributaria (Art. 191-206 ,LGT)."@es ;
+            rdfs:label "Infracción"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Item
+:Item rdf:type owl:Class ;
+      rdfs:comment "Artículo o servicio incluido en la factura. Se detallan toda la información relevante como el precio del elemento individual y tipo impositivo."@es ;
+      rdfs:label "Item"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Lugar_Realización
+:Lugar_Realización rdf:type owl:Class ;
+                   rdfs:comment """Ámbito espacial de aplicación:
+ 1) Territorio  peninsular  español  y  las  Islas  Baleares,  con inclusión de las islas adyacentes, el mar territorial hasta el límite de 12 millas náuticas y el espacio aéreo correspondiente a todos estos territorios
+ 2) Se excluyen del ámbito del impuesto el Archipiélago Canario, y los territorios de Ceuta y Melilla."""@es ;
+                   rdfs:label "Lugar de Realización"@es ;
+                   rdfs:seeAlso """MEMENTO IVA 9370
+MIVA nº400 s.
+LIVA art. 68"""@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Obligación
+:Obligación rdf:type owl:Class ;
+            rdfs:comment "La obligación tributaria es toda aquella obligación que surge como consecuencia de la necesidad de pagar tributos."@es ;
+            rdfs:label "Obligación"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Obligación_General
+:Obligación_General rdf:type owl:Class ;
+                    rdfs:subClassOf :Obligación ;
+                    rdfs:comment "Subconjunto de obligaciones que tienen un carácter general."@es ;
+                    rdfs:label "Obligación General"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Obligación_Particular
+:Obligación_Particular rdf:type owl:Class ;
+                       rdfs:subClassOf :Obligación ;
+                       rdfs:comment "Subconjunto de obligaciones que tienen un tratamiento específico individual."@es ;
+                       rdfs:label "Obligación Particular"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Operación
+:Operación rdf:type owl:Class ;
+           rdfs:comment """Clase que engloba los diferentes tipos de operación que contempla la Ley del IVA.
+Una operación es un hecho que puede o no estar gravado con el impuesto."""@es ;
+           rdfs:label "Operación"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Operación_No_Sujeta
+:Operación_No_Sujeta rdf:type owl:Class ;
+                     rdfs:subClassOf :Operación ;
+                     rdfs:comment """La  Ley  define  como  no  sujetas  al  impuesto  determinadas  operaciones,  bien  porque  se  realizan  por  personas que  no  son  o  no  actúan  como  empresarios, bien por simplificación o por razones de neutralidad.
+9167 - Transmisión de negocio en marcha
+9175 - Operaciones de las AAPP
+9180 - Entregas y servicios con fines de promoción
+9185 - Prestación de servicios en régimen de dependencia
+9190 - Autoconsumos
+9195 - Concesiones y autorizaciones administrativas
+9200 - Otras operaciones no sujetas"""@es ;
+                     rdfs:label "Operación No Sujeta"@es ;
+                     rdfs:seeAlso """MEMENTO IVA 9160
+MIVA nº270 s."""@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Operación_Sujeta
+:Operación_Sujeta rdf:type owl:Class ;
+                  rdfs:subClassOf :Operación ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :acogidoA ;
+                                    owl:someValuesFrom :Regímen_Especial
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :acogidoA ;
+                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                    owl:onClass :Regímen_Especial
+                                  ] ;
+                  rdfs:comment "Grupo de opraciones en las que la aplicación del impuesto es obligatoria. Solo están sujetas las operaciones realizadas a título oneroso, mediante contraprestación, en dinero o en especie."@es ;
+                  rdfs:label "Operación Sujeta"@es ;
+                  rdfs:seeAlso """MEMENTO IVA 9112
+MIVA nº405 s."""@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Persona
+:Persona rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneRol ;
+                           owl:allValuesFrom :Rol
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneRol ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Rol
+                         ] ;
+         rdfs:comment "Entidad para modelar los atributos necesarios de la persona involucrada en el proceso del IVA."@es ;
+         rdfs:label "Persona"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Receptor
+:Receptor rdf:type owl:Class ;
+          rdfs:subClassOf :Rol ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :recibeFactura ;
+                            owl:allValuesFrom :Factura
+                          ] ;
+          rdfs:comment """Receptor modela al Consumidor Final, y engloba:
+1) Los particulares, en el sentido de personas que no tienen la condición de empresarios o profesionales
+2) Los empresarios o profesionales, por las operaciones que realicen al margen de su actividad económica
+3) Otras  entidades,  como  asociaciones  o  fundaciones,  que  carecen  de  la  condición  de  empresario  o  profesional  o,teniéndola, actúan al margen de ella
+4) Las Administraciones públicas, cuando actúen en el ejercicio de sus funciones públicas"""@es ;
+          rdfs:label "Receptor"@es ;
+          rdfs:seeAlso """MEMENTO IVA 9091
+MIVA nº10 s."""@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Regímen_Especial
+:Regímen_Especial rdf:type owl:Class ;
+                  rdfs:comment """Creación para simplificar el cumplimiento de las obligaciones formales por parte de los sujetos pasivos, como es el caso del régimen simplificado o el de recargo de equivalencia y, en otros casos, de evitar una posible doble imposición, como en el caso del régimen de bienes usados.
+Los regímenes especiales tienen carácter voluntario, a excepción del régimen especial aplicable a las operaciones con oro de inversión, del régimen especial de las agencias de viajes y del régimen especial del recargo de equivalencia, que son obligatorios."""@es ;
+                  rdfs:label "Regímen Especial"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Representación
+:Representación rdf:type owl:Class ;
+                rdfs:subClassOf :Obligación_Particular ;
+                rdfs:label "Representante de no establecidos"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Rol
+:Rol rdf:type owl:Class ;
+     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                       owl:onProperty :cometeInfraccion ;
+                       owl:someValuesFrom :Infracción
+                     ] ;
+     rdfs:comment "Clase adicional para generalizar las clases de Sujeto Pasivo y Receptor en una clase Persona."@es ;
+     rdfs:label "Rol"@es .
+
+
+###  http://vocab.linkeddata.es/def/hacienda/iva#Sujeto_Pasivo
+:Sujeto_Pasivo rdf:type owl:Class ;
+               rdfs:subClassOf :Rol ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :emiteFactura ;
+                                 owl:allValuesFrom :Factura
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :realizaOperación ;
+                                 owl:allValuesFrom :Operación
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :tieneObligación ;
+                                 owl:allValuesFrom :Obligación
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :emiteFactura ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :Factura
+                               ] ;
+               rdfs:comment """Persona  o  entidad  que  realiza  las  operaciones  sujetas  al  impuesto
+(empresarios o profesionales: nº 9142 ) y que está obligada al pago del mismo y al cumplimiento de las obligaciones formales.
+En ocasiones, también responden del pago del tributo personas distintas del sujeto pasivo (responsablesdel impuesto: nº 9532 )"""@es ;
+               rdfs:label "Sujeto Pasivo"@es ;
+               rdfs:seeAlso """MEMENTO IVA 9500
+MIVA nº1300 s.
+LIVA art. 84 a 70"""@es .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

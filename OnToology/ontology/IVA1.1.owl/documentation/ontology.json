@@ -1,0 +1,1120 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    }, {
+      "@id" : "_:genid3"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol"
+  } ]
+}, {
+  "@id" : "_:genid12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura"
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneObligacion"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura"
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/iva/tipo-operacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Alberto Megina Gonzalo (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Mario de Lucas García (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  } ],
+  "http://purl.org/dc/elements/1.1/identifier" : [ {
+    "@value" : "http://vocab.linkeddata.es/def/hacienda/iva"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "es",
+    "@value" : "Ontología que modeliza el Impuesto sobre el Valor Añadido siguiendo el marco impuesto por la Ley 37/1992 sobre el Valor Añadido (LIVA) y el reglamento del impuesto RD 1624/1992 (RIVA)."
+  } ],
+  "http://purl.org/dc/terms/hasFormat" : [ {
+    "@value" : "http://vocab.linkeddata.es/def/hacienda/iva.owl"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2021-07-20"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://creativecommons.org/licenses/by/4.0"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "iva"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "http://vocab.linkeddata.es/def/hacienda/iva#"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Esta ontología se ha creado en el marco de una colaboración entre el Ontology Engineering Group y los Institutos Fiscales de Hacienda"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "First official release"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Forma parte de la estructura de una factura electrónica, en base al modelo del Ministerio de Asuntos Económicos y Transformación Digital, y contiene los datos globales e identificativos de una factura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Cabecera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "es",
+    "@value" : "https://www.facturae.gob.es/formato/Documents/EspanolFacturae3_0.pdf"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Deducción",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Deducción"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligación_Particular"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Devolución",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Devolución"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligación_Particular"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Modela el privilegio conforme a lo establecido por la Ley LIVA, que excluye del pago del IVA, un hecho realizado por un Sujeto Pasivo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Exención"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnExportacionDeBienes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnImportacionDeBienes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnOperacionIntracomunitaria",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosMedicosYSanitarios",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion" ],
+  "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion" : [ {
+    "@language" : "es",
+    "@value" : "Los servicios de hospitalización o asistencia sanitaria y los relacionados directamente con ellos, realizados por entidades de Derecho público o por entidades privadas en régimen de precios autorizados o comunicados;\n\nLa  asistencia  a  personas  físicas  por  profesionales  médicos  o  sanitarios,  cualquiera  que  sea  la  persona destinataria de dichos servicios. La exención comprende las prestaciones de asistencia médica, quirúrgica y sanitaria,relativas  al  diagnóstico,  prevención  y  tratamiento  de  enfermedades,  incluidos  análisis  clínicos  y  exploraciones radiológicas. Esta exención se refiere a los servicios que se prestan fuera de los establecimientos hospitalarios;\n\nLas  entregas  de  sangre,  plasma  sanguíneo  y  demás  fluidos,  tejidos  y  otros  elementos  del  cuerpo  humano efectuadas con fines médicos o de investigación o para su procesamiento con idénticos fines. No se aplica la exenciónen aquellas entregas que se utilicen para fabricar un medicamento (TJUE 5-1-16, asunto TMD C-412/15; DGT CV25-6-19 );\n\nLas  prestaciones  de  servicios,  realizadas  en  el  ámbito  de  sus  respectivas  profesiones,  por  estomatólogo,odontólogos, mecánicos dentistas y protésicos dentales, aunque actúen a través de una sociedad o entidad, que facture a los destinatarios de los mismos ( DGT 29-5-95 ). También la entrega, reparación y colocación de prótesis dentales y ortopedias maxilares realizadas por los mismos, cualquiera que sea la persona a cuyo cargo se realicenlas operaciones;\n\nEl transporte de enfermos o heridos en ambulancia o vehículos especialmente adaptados para ello, incluidos(  DGT  28-4-86  ,  4-6-89  y  DGT  CV  16-7-86  )  los  helicópteros  dedicados  exclusivamente  a  dicha  actividad  y especialmente adaptados. \n\nLas  entregas  de  bienes  y  prestaciones  de  servicios  que  realiza  la  Seguridad  Social  para  el  cumplimiento  de sus fines, directamente o a través de sus entidades gestoras o colaboradoras, exclusión hecha de las entregas de medicamentos o material sanitario realizadas por cuenta de la Seguridad Social"
+  } ],
+  "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion" : [ {
+    "@language" : "es",
+    "@value" : "Entrega de medicamentos para ser consumidos fuera de los establecimientos señalados.\n\nServicios Veterinarios.\n\nArrendamientos de bienes (salas, equipos, materiales) efectuados por las entidades mencionadas.\n\nTransporte  realizado  en  autotaxis;  ni  el  servicio  de  transporte  de  órganos  humanos  paratrasplantes ( DGT 6-5-94 );"
+  } ],
+  "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precisionSobreExencion" : [ {
+    "@language" : "es",
+    "@value" : "1)    Se  consideran  directamente  relacionados  con  la  hospitalización  o  asistencia  sanitaria  los  servicios  de alimentación y alojamiento de enfermos y acompañantes, pero no a personas distintas de ellos; los servicios de quirófano, suministro de medicamentos y material sanitario. No se comprende el alquiler de aparatos de TV. En el contrato de concesión de obra pública para la redacción del proyecto, construcción y explotación de un hospital el único objeto del contrato es la prestación de un conjunto de servicios que responden a una finalidad  común,  la  gestión  hospitalaria,  con  el  objetivo  de  atender  no  sólo  el  alojamiento  y  manutención de los pacientes, sino todas las necesidades del centro hospitalario. El destinatario de dichos servicios es la Administración y no los usuarios de la infraestructura, por lo que los servicios prestados no pueden considerarse como de alojamiento, al no ser sus destinatarios los particulares ( TS 1-6-17, EDJ 96419 ).2)  Se entiende por precios autorizados o comunicados aquellos cuya modificación está sujeta a la previa autorización o comunicación a algún órgano de la Administración ( RIVA art.4 ).3)    La  exención  comprende  la  asistencia  sanitaria  externa,  aunque  no  implique  hospitalización:  análisis clínicos,  estudios  radiológicos,  etc.  De  otra  parte,  los  servicios  mencionados  están  exentos  cuando  se presten  materialmente  a  personas  físicas,  aunque  quien  figure  en  la  factura  sea  un  tercero.  Los  análisis clínicos, de carácter preventivo, efectuados por un laboratorio de Derecho privado, previa prescripción de un médico generalista, pueden estar exentos, en cuanto sea asistencia sanitaria prestada por un establecimiento reconocido ( TJUE 8-6-06, C-106/05 ). No es necesario que exista una relación de confianza entre el médico y la persona tratada, por lo que los servicios de análisis clínicos prestados por el especialista al laboratorio seencuentran exentos ( TJUE 18-9-19, asunto Wolf-Henning C-700/17 ).4)    El  transporte  de  órganos  y  muestras  biológicas  de  origen  humano  para  diferentes  hospitales  no  está exento, aunque los servicios se retribuyan por la Seguridad Social, porque no es una prestación relacionada directamente con las de carácter médico. No se puede calificar al transportista de «entidad de Derecho público» ni de «establecimiento de la misma naturaleza legalmente reconocido» ( TJUE 2-7-15, C-334/14 )."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Exención en Servicios Médicos y Sanitarios"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosSociales",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion" ],
+  "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion" : [ {
+    "@language" : "es",
+    "@value" : "La asistencia social, en la que se incluyen los servicios que se indican a continuación:\n -  protección de la infancia y juventud, que comprende los servicios de rehabilitación y formación de niños y  jóvenes,  asistencia  a  lactantes,  custodia  y  atención  a  niños  (desde  1-1-2014  se  suprime  la  limitación  de ser menores de seis años de edad), realización de cursos, excursiones y análogos prestados a menores de veinticinco años de edad;\n–   asistencia a la tercera edad;\n–   educación especial y asistencia a personas con discapacidad.\n–   acción social comunitaria y familiar, que comprende los servicios sociales en una comunidad concreta y orientada a las familias que la integran, para prevenir la marginación social y la inserción social en procesos de inadaptación. Los servicios pueden consistir en: ayuda a domicilio, centros de día, hogares sustitutos, mini residencias, viviendas tuteladas y similares ( DGT 21-11-86 );\n–   reinserción social y prevención de la delincuencia;\n–   asistencia  a  minorías  étnicas,  refugiados  y  asilados,  transeúntes,  personas  con  cargas  familiares  no compartidas, exreclusos, alcohólicos y toxicómanos;\n–   la prestación por entidades privadas de carácter social, de servicios relativos a la adopción de menores( DGT 9-12-96 );\n–   cooperación para el desarrollo ( LIVA art.20.uno.8º ).\n\nCesiones  de  personal  realizadas,  en  el  cumplimiento  de  sus  fines,  por  entidades  religiosas inscritas en el Registro correspondiente del Ministerio de Justicia, para el desarrollo de las siguientes actividades:\n–   Hospitalización y asistencia sanitaria y demás actividades relacionadas con las mismas.\n–   Asistencia social (las comprendidas en nº 9272 ).\n–   Educación, enseñanza, formación y reciclaje profesional\n\nEntidades sin fin lucrativo y colegios profesionales. Están exentas las prestaciones de servicios y entregas de bienes accesorias a las mismas efectuadas directamente a sus miembros por organismos o entidades legalmente reconocidos  que  no  tengan  finalidad  lucrativa,  cuyos  objetivos  sean  de  naturaleza  política,  sindical,  religiosa, patriótica, filantrópica o cívica, realizadas para la consecución de sus finalidades específicas"
+  } ],
+  "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion" : [ {
+    "@language" : "es",
+    "@value" : "Entregas de bienes a terceros por los centros ocupacionales ( DGT 5-6-86 );"
+  } ],
+  "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precisionSobreExencion" : [ {
+    "@language" : "es",
+    "@value" : "La mediación en los servicios de guarda de niños solo está exenta si el propio servicio de guarda cumple los requisitos para beneficiarse de la exención ( TJUE 9-2-06, C-415/04 ).2)\n\nNi los cuidadores, ni las empresa de trabajo temporal que ceden a estos empleados, entran en el concepto de «organismos a los que se ha reconocido carácter social», previsto en la Dir 2006/112/CE art.132.1.g ) ( TJUE 12-3-15,C-594/13 ).\n\n\nSe consideran ENTIDADES O ESTABLECIIENTOS DE CARÁCTER SOCIAL aquellos en los que concurran los siguientes requisitos:\n- Carecer de finalidad lucrativa y dedicar los beneficios eventualmente obtenidos al desarrollo de actividades exentas de idéntica naturaleza. El carácter «no lucrativo » de los establecimientos privados se determina en función  de  todas  sus  actividades,  no  solo  de  las  exentas.  Aunque  la  entidad  pretenda  obtener  un  superavit anual en sus cuentas, puede apreciarse ese carácter siempre que no exista intención u obligación de repartirlo entre sus socios ( TJUE 21-3-02 ).\n- Los cargos de presidente, patrono o representante legal deben ser gratuitos y carecer de interés en los resultados económicos de la explotación, por sí mismos o a través de persona interpuesta.\n- Los  socios,  comuneros  o  partícipes  de  las  entidades  o  establecimientos  y  sus  cónyuges  o  parientes consanguíneos, hasta el segundo grado inclusive, no pueden ser destinatarios principales de las operaciones exentas, ni gozar de condiciones especiales en la prestación de los servicios (este requisito no se exige en las prestaciones de servicios relativas a asistencia social y servicios deportivos, ver nº 9272 y nº 9284 ( LIVAart.20.uno.8.º y 13.º )."
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Modelado de una factura , en base a las guías del Ministerio de Asuntos Económicos y Transformación Digital, y contiene los elementos esenciales: Descripción global, recogida en la clase Cabecera y los conceptos contenidos en la factura, que están recogidos en la clase Item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Factura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "es",
+    "@value" : "https://www.facturae.gob.es/formato/Documents/EspanolFacturae3_0.pdf"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  }, {
+    "@id" : "_:genid9"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Consiste en la transgresión de una norma fiscal por parte de una persona física o jurídica u otra entidad. Se calificarán y sancionarán conforme a lo establecido en la Ley General Tributaria (Art. 191-206 ,LGT)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Infracción"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "es",
+    "@value" : "LIVA art.170 y 171 ; RIVA art.83"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Artículo o servicio incluido en la factura. Se detallan toda la información relevante como el precio del elemento individual y tipo impositivo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Item"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Ámbito espacial de aplicación:\n 1) Territorio  peninsular  español  y  las  Islas  Baleares,  con inclusión de las islas adyacentes, el mar territorial hasta el límite de 12 millas náuticas y el espacio aéreo correspondiente a todos estos territorios\n 2) Se excluyen del ámbito del impuesto el Archipiélago Canario, y los territorios de Ceuta y Melilla."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Lugar de Realización"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "es",
+    "@value" : "MEMENTO IVA 9370\nMIVA nº400 s.\nLIVA art. 68"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La obligación tributaria es toda aquella obligación que surge como consecuencia de la necesidad de pagar tributos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Obligación"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligación_General",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Subconjunto de obligaciones que tienen un carácter general."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Obligación General"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligación_Particular",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Subconjunto de obligaciones que tienen un tratamiento específico individual."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Obligación Particular"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Clase que engloba los diferentes tipos de operación que contempla la Ley del IVA.\nUna operación es un hecho que puede o no estar gravado con el impuesto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Operación"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operación_No_Sujeta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La  Ley  define  como  no  sujetas  al  impuesto  determinadas  operaciones,  bien  porque  se  realizan  por  personas que  no  son  o  no  actúan  como  empresarios, bien por simplificación o por razones de neutralidad.\n9167 - Transmisión de negocio en marcha\n9175 - Operaciones de las AAPP\n9180 - Entregas y servicios con fines de promoción\n9185 - Prestación de servicios en régimen de dependencia\n9190 - Autoconsumos\n9195 - Concesiones y autorizaciones administrativas\n9200 - Otras operaciones no sujetas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Operación No Sujeta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "es",
+    "@value" : "MEMENTO IVA 9160\nMIVA nº270 s."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operación_Sujeta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Grupo de opraciones en las que la aplicación del impuesto es obligatoria. Solo están sujetas las operaciones realizadas a título oneroso, mediante contraprestación, en dinero o en especie."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Operación Sujeta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "es",
+    "@value" : "MEMENTO IVA 9112\nMIVA nº405 s."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Entidad para modelar los atributos necesarios de la persona involucrada en el proceso del IVA."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Receptor modela al Consumidor Final, y engloba:\n1) Los particulares, en el sentido de personas que no tienen la condición de empresarios o profesionales\n2) Los empresarios o profesionales, por las operaciones que realicen al margen de su actividad económica\n3) Otras  entidades,  como  asociaciones  o  fundaciones,  que  carecen  de  la  condición  de  empresario  o  profesional  o,teniéndola, actúan al margen de ella\n4) Las Administraciones públicas, cuando actúen en el ejercicio de sus funciones públicas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Receptor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "es",
+    "@value" : "MEMENTO IVA 9091\nMIVA nº10 s."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol"
+  }, {
+    "@id" : "_:genid13"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Creación para simplificar el cumplimiento de las obligaciones formales por parte de los sujetos pasivos, como es el caso del régimen simplificado o el de recargo de equivalencia y, en otros casos, de evitar una posible doble imposición, como en el caso del régimen de bienes usados.\nLos regímenes especiales tienen carácter voluntario, a excepción del régimen especial aplicable a las operaciones con oro de inversión, del régimen especial de las agencias de viajes y del régimen especial del recargo de equivalencia, que son obligatorios."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Regímen Especial"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Representación",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Representante de no establecidos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligación_Particular"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Clase adicional para generalizar las clases de Sujeto Pasivo y Receptor en una clase Persona."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Rol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Persona  o  entidad  que  realiza  las  operaciones  sujetas  al  impuesto\n(empresarios o profesionales: nº 9142 ) y que está obligada al pago del mismo y al cumplimiento de las obligaciones formales.\nEn ocasiones, también responden del pago del tributo personas distintas del sujeto pasivo (responsablesdel impuesto: nº 9532 )"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Sujeto Pasivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "es",
+    "@value" : "MEMENTO IVA 9500\nMIVA nº1300 s.\nLIVA art. 84 a 70"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol"
+  }, {
+    "@id" : "_:genid15"
+  }, {
+    "@id" : "_:genid16"
+  }, {
+    "@id" : "_:genid17"
+  }, {
+    "@id" : "_:genid18"
+  }, {
+    "@id" : "_:genid19"
+  }, {
+    "@id" : "_:genid20"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre Sujeto Pasivo y Régimen Especial. Modela una relación de inclusión de un Sujeto Pasivo dentro de un determinado régimen especial por cumplir los requisitos exigidos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Acogido a un Regímen Especial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#actividadEmpresarial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Descripción del código de la actividad empresarial de una persona en función del CNAE"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Actividad empresarial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#baseImponible",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La base imponible es el elemento cuantitativo del hecho imponible sobre el que se aplica el tipo impositivo paracalcular la cuota tributaria."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Base Imponible"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#real"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cantidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Número de productos iguales contenidos en la factura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Cantidad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#codigoMoneda",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Código indicativo de la moneda utilizada."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Código moneda"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre Sujeto Pasivo e Infracción. Modela la acción de cometer una infracción tributaria por parte de una Persona."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Comete"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "es",
+    "@value" : "MEMENTO IVA 11080\nMIVA nº 7450"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre  Factura e Item. Modela la acción de contener un item dentro de una determinada Factura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Contiene Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descripcion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Comentario general acerca de la factura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Descripción"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descuento",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indicador de un descuento aplicado al item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Descuento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#real"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#direccion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Dirección física de una persona."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Dirección"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre Sujeto Pasivo y Factura. Modela la relación de emitir una factura por parte de una persona."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Emite"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#fechaExpedicion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indicador de la fecha en la que se realizó la factura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Fecha de expedición"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Hecho Imponible cubierto en una exención"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Hecho imponible no cubierto en una exención"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#identificador",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Identificador único de una factura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Identificador"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#importe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Coste total de un conjunto de items."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Importe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#real"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#lugarRealizacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Lugar donde se realizó la factura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Lugar de realización"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#modalidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indicador de la modalidad concreta de una factura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Modalidad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#nombre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indicador del nombre de una persona."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Nombre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precioUnitario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Precio individual de cada item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Precio unitario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#real"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precisionSobreExencion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre Sujeto Pasivo y Operación. Modela la realización de una operación por parte de un sujeto pasivo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Realiza operación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre Recepto y Factura. Modela la acción en la que un receptor recibe una determinada factura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Recibe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre Factura y Cabecera. Modela la relación de pertenencia de una cabecera a una factura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tiene cabecera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre Factura y Lugar de realización. Indica un determinado lugar donde se emitió la factura."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Lugar de realización"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneObligacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre Sujeto Pasivo y Obligación. Modela la existencia de obligaciones a tratar por parte de los sujetos pasivos del IVA."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tiene Obligación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación entre Persona y Rol. Modela la relación de rol con persona de forma que una persona pueda realizar el rol de sujeto pasivo o de receptor en un determinado momento."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tiene rol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoImpositivo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Porcentaje aplicado al coste del item. Existen 3 tipos impositivos: tipo general (21%), reducido (10%)  y superreducido (4%)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tipo impositivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#real"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "es",
+    "@value" : "MEMENTO IVA 10140\nMIVA nº2000 s."
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indicador del tipo de operación de una operación sujeta."
+  }, {
+    "@language" : "es",
+    "@value" : "Tipo de operación relacionada con un hecho imponible."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operación_Sujeta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Tipo de operación"
+  }, {
+    "@language" : "es",
+    "@value" : "tipo de operación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#version",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indicador del número de versión de factura electrónica utilizada."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Versión"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#real"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/iva/tipo-operacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
+} ]
