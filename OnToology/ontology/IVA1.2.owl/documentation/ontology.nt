@@ -1,0 +1,576 @@
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva/1.0.0> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://purl.org/dc/elements/1.1/creator> "Alberto Megina Gonzalo (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://purl.org/dc/elements/1.1/creator> "Mario de Lucas García (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/def/hacienda/iva" .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://purl.org/dc/elements/1.1/title> "Ontología que modeliza el Impuesto sobre el Valor Añadido siguiendo el marco impuesto por la Ley 37/1992 sobre el Valor Añadido (LIVA) y el reglamento del impuesto RD 1624/1992 (RIVA)."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/def/hacienda/iva.owl" .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://purl.org/dc/terms/issued> "2021-07-20" .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://purl.org/vocab/vann/preferredNamespacePrefix> "iva" .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/def/hacienda/iva#" .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta ontología se ha creado en el marco de una colaboración entre el Ontology Engineering Group y los Institutos Fiscales de Hacienda" .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> <http://www.w3.org/2002/07/owl#versionInfo> "First official release"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre Sujeto Pasivo y Régimen Especial. Modela una relación de inclusión de un Sujeto Pasivo dentro de un determinado régimen especial por cumplir los requisitos exigidos."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA> <http://www.w3.org/2000/01/rdf-schema#label> "Acogido a un Regímen Especial"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre Sujeto Pasivo e Infracción. Modela la acción de cometer una infracción tributaria por parte de una Persona."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion> <http://www.w3.org/2000/01/rdf-schema#label> "Comete"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "MEMENTO IVA 11080\nMIVA nº 7450"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre  Factura e Item. Modela la acción de contener un item dentro de una determinada Factura."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem> <http://www.w3.org/2000/01/rdf-schema#label> "Contiene Item"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre Sujeto Pasivo y Factura. Modela la relación de emitir una factura por parte de una persona."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura> <http://www.w3.org/2000/01/rdf-schema#label> "Emite"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre Sujeto Pasivo y Operación. Modela la realización de una operación por parte de un sujeto pasivo."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion> <http://www.w3.org/2000/01/rdf-schema#label> "Realiza operación"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre Recepto y Factura. Modela la acción en la que un receptor recibe una determinada factura."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura> <http://www.w3.org/2000/01/rdf-schema#label> "Recibe"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre Factura y Cabecera. Modela la relación de pertenencia de una cabecera a una factura."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene cabecera"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre Factura y Lugar de realización. Indica un determinado lugar donde se emitió la factura."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion> <http://www.w3.org/2000/01/rdf-schema#label> "Lugar de realización"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneObligacion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneObligacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneObligacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneObligacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneObligacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre Sujeto Pasivo y Obligación. Modela la existencia de obligaciones a tratar por parte de los sujetos pasivos del IVA."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneObligacion> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene Obligación"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación entre Persona y Rol. Modela la relación de rol con persona de forma que una persona pueda realizar el rol de sujeto pasivo o de receptor en un determinado momento."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene rol"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_Sujeta> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/iva/tipo-operacion> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#actividadEmpresarial
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#actividadEmpresarial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#actividadEmpresarial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#actividadEmpresarial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#actividadEmpresarial> <http://www.w3.org/2000/01/rdf-schema#comment> "Descripción del código de la actividad empresarial de una persona en función del CNAE"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#actividadEmpresarial> <http://www.w3.org/2000/01/rdf-schema#label> "Actividad empresarial"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#baseImponible
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#baseImponible> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#baseImponible> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#baseImponible> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#real> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#baseImponible> <http://www.w3.org/2000/01/rdf-schema#comment> "La base imponible es el elemento cuantitativo del hecho imponible sobre el que se aplica el tipo impositivo paracalcular la cuota tributaria."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#baseImponible> <http://www.w3.org/2000/01/rdf-schema#label> "Base Imponible"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cantidad
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cantidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cantidad> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cantidad> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cantidad> <http://www.w3.org/2000/01/rdf-schema#comment> "Número de productos iguales contenidos en la factura."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cantidad> <http://www.w3.org/2000/01/rdf-schema#label> "Cantidad"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#codigoMoneda
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#codigoMoneda> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#codigoMoneda> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#codigoMoneda> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#codigoMoneda> <http://www.w3.org/2000/01/rdf-schema#comment> "Código indicativo de la moneda utilizada."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#codigoMoneda> <http://www.w3.org/2000/01/rdf-schema#label> "Código moneda"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descripcion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descripcion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descripcion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descripcion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descripcion> <http://www.w3.org/2000/01/rdf-schema#comment> "Comentario general acerca de la factura."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descripcion> <http://www.w3.org/2000/01/rdf-schema#label> "Descripción"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descuento
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descuento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descuento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descuento> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#real> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descuento> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicador de un descuento aplicado al item."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descuento> <http://www.w3.org/2000/01/rdf-schema#label> "Descuento"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#direccion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#direccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#direccion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#direccion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#direccion> <http://www.w3.org/2000/01/rdf-schema#comment> "Dirección física de una persona."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#direccion> <http://www.w3.org/2000/01/rdf-schema#label> "Dirección"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#domicilioFiscal
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#domicilioFiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#domicilioFiscal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#domicilioFiscal> <http://www.w3.org/2000/01/rdf-schema#comment> "Domicilio fiscal del Sujeto Pasivo, es decir, el lugar de localización del obligado tributario en sus relaciones con las AAPP."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#domicilioFiscal> <http://www.w3.org/2000/01/rdf-schema#label> "Domicilio fiscal"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#fechaExpedicion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#fechaExpedicion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#fechaExpedicion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#fechaExpedicion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#fechaExpedicion> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicador de la fecha en la que se realizó la factura."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#fechaExpedicion> <http://www.w3.org/2000/01/rdf-schema#label> "Fecha de expedición"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion> <http://www.w3.org/2000/01/rdf-schema#comment> "Hecho Imponible cubierto en una exención"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion> <http://www.w3.org/2000/01/rdf-schema#label> "Hecho imponible no cubierto en una exención"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#identificador
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#identificador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#identificador> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#identificador> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#identificador> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificador único de una factura."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#identificador> <http://www.w3.org/2000/01/rdf-schema#label> "Identificador"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#importe
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#importe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#importe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#importe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#importe> <http://www.w3.org/2000/01/rdf-schema#comment> "Coste total de un conjunto de items."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#importe> <http://www.w3.org/2000/01/rdf-schema#label> "Importe"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#modalidad
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#modalidad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#modalidad> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#modalidad> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#modalidad> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicador de la modalidad concreta de una factura."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#modalidad> <http://www.w3.org/2000/01/rdf-schema#label> "Modalidad"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#nombre
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#nombre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#nombre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#nombre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#nombre> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicador del nombre de una persona."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#nombre> <http://www.w3.org/2000/01/rdf-schema#label> "Nombre"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precioUnitario
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precioUnitario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precioUnitario> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precioUnitario> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precioUnitario> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#real> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precioUnitario> <http://www.w3.org/2000/01/rdf-schema#comment> "Precio individual de cada item."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precioUnitario> <http://www.w3.org/2000/01/rdf-schema#label> "Precio unitario"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precisionSobreExencion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precisionSobreExencion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precisionSobreExencion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoImpositivo
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoImpositivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoImpositivo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoImpositivo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#real> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoImpositivo> <http://www.w3.org/2000/01/rdf-schema#comment> "Porcentaje aplicado al coste del item. Existen 3 tipos impositivos: tipo general (21%), reducido (10%)  y superreducido (4%)."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoImpositivo> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo impositivo"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoImpositivo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "MEMENTO IVA 10140\nMIVA nº2000 s."@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#version
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#version> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#version> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#version> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#real> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#version> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicador del número de versión de factura electrónica utilizada."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#version> <http://www.w3.org/2000/01/rdf-schema#label> "Versión"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> <http://www.w3.org/2000/01/rdf-schema#comment> "Forma parte de la estructura de una factura electrónica, en base al modelo del Ministerio de Asuntos Económicos y Transformación Digital, y contiene los datos globales e identificativos de una factura."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> <http://www.w3.org/2000/01/rdf-schema#label> "Cabecera"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.facturae.gob.es/formato/Documents/EspanolFacturae3_0.pdf"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Deducción
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Deducci\u00F3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Deducci\u00F3n> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligaci\u00F3n_Particular> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Deducci\u00F3n> <http://www.w3.org/2000/01/rdf-schema#label> "Deducción"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Devolución
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Devoluci\u00F3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Devoluci\u00F3n> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligaci\u00F3n_Particular> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Devoluci\u00F3n> <http://www.w3.org/2000/01/rdf-schema#label> "Devolución"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion> <http://www.w3.org/2000/01/rdf-schema#comment> "Modela el privilegio conforme a lo establecido por la Ley LIVA, que excluye del pago del IVA, un hecho realizado por un Sujeto Pasivo."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion> <http://www.w3.org/2000/01/rdf-schema#label> "Exención"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnExportacionDeBienes
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnExportacionDeBienes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnExportacionDeBienes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnImportacionDeBienes
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnImportacionDeBienes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnImportacionDeBienes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnOperacionIntracomunitaria
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnOperacionIntracomunitaria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnOperacionIntracomunitaria> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem> .
+_:genid8 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid8 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera> .
+_:genid9 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid9 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion> .
+_:genid10 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid10 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> <http://www.w3.org/2000/01/rdf-schema#comment> "Modelado de una factura , en base a las guías del Ministerio de Asuntos Económicos y Transformación Digital, y contiene los elementos esenciales: Descripción global, recogida en la clase Cabecera y los conceptos contenidos en la factura, que están recogidos en la clase Item."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> <http://www.w3.org/2000/01/rdf-schema#label> "Factura"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://www.facturae.gob.es/formato/Documents/EspanolFacturae3_0.pdf"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion> <http://www.w3.org/2000/01/rdf-schema#comment> "Consiste en la transgresión de una norma fiscal por parte de una persona física o jurídica u otra entidad. Se calificarán y sancionarán conforme a lo establecido en la Ley General Tributaria (Art. 191-206 ,LGT)."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion> <http://www.w3.org/2000/01/rdf-schema#label> "Infracción"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "LIVA art.170 y 171 ; RIVA art.83"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> <http://www.w3.org/2000/01/rdf-schema#comment> "Artículo o servicio incluido en la factura. Se detallan toda la información relevante como el precio del elemento individual y tipo impositivo."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> <http://www.w3.org/2000/01/rdf-schema#label> "Item"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Ámbito espacial de aplicación:\n 1) Territorio  peninsular  español  y  las  Islas  Baleares,  con inclusión de las islas adyacentes, el mar territorial hasta el límite de 12 millas náuticas y el espacio aéreo correspondiente a todos estos territorios\n 2) Se excluyen del ámbito del impuesto el Archipiélago Canario, y los territorios de Ceuta y Melilla."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion> <http://www.w3.org/2000/01/rdf-schema#label> "Lugar de Realización"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "MEMENTO IVA 9370\nMIVA nº400 s.\nLIVA art. 68"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion> <http://www.w3.org/2000/01/rdf-schema#comment> "La obligación tributaria es toda aquella obligación que surge como consecuencia de la necesidad de pagar tributos."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion> <http://www.w3.org/2000/01/rdf-schema#label> "Obligación"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligación_General
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligaci\u00F3n_General> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligaci\u00F3n_General> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligaci\u00F3n_General> <http://www.w3.org/2000/01/rdf-schema#comment> "Subconjunto de obligaciones que tienen un carácter general."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligaci\u00F3n_General> <http://www.w3.org/2000/01/rdf-schema#label> "Obligación General"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligación_Particular
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligaci\u00F3n_Particular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligaci\u00F3n_Particular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligaci\u00F3n_Particular> <http://www.w3.org/2000/01/rdf-schema#comment> "Subconjunto de obligaciones que tienen un tratamiento específico individual."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligaci\u00F3n_Particular> <http://www.w3.org/2000/01/rdf-schema#label> "Obligación Particular"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase que engloba los diferentes tipos de operación que contempla la Ley del IVA.\nUna operación es un hecho que puede o no estar gravado con el impuesto."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion> <http://www.w3.org/2000/01/rdf-schema#label> "Operación"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operación_No_Sujeta
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_No_Sujeta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_No_Sujeta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_No_Sujeta> <http://www.w3.org/2000/01/rdf-schema#comment> "La  Ley  define  como  no  sujetas  al  impuesto  determinadas  operaciones,  bien  porque  se  realizan  por  personas que  no  son  o  no  actúan  como  empresarios, bien por simplificación o por razones de neutralidad.\n9167 - Transmisión de negocio en marcha\n9175 - Operaciones de las AAPP\n9180 - Entregas y servicios con fines de promoción\n9185 - Prestación de servicios en régimen de dependencia\n9190 - Autoconsumos\n9195 - Concesiones y autorizaciones administrativas\n9200 - Otras operaciones no sujetas"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_No_Sujeta> <http://www.w3.org/2000/01/rdf-schema#label> "Operación No Sujeta"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_No_Sujeta> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "MEMENTO IVA 9160\nMIVA nº270 s."@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operación_Sujeta
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_Sujeta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_Sujeta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_Sujeta> <http://www.w3.org/2000/01/rdf-schema#comment> "Grupo de opraciones en las que la aplicación del impuesto es obligatoria. Solo están sujetas las operaciones realizadas a título oneroso, mediante contraprestación, en dinero o en especie."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_Sujeta> <http://www.w3.org/2000/01/rdf-schema#label> "Operación Sujeta"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_Sujeta> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "MEMENTO IVA 9112\nMIVA nº405 s."@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol> .
+_:genid11 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol> .
+_:genid12 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona> <http://www.w3.org/2000/01/rdf-schema#comment> "Entidad para modelar los atributos necesarios de la persona involucrada en el proceso del IVA."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona> <http://www.w3.org/2000/01/rdf-schema#label> "Persona"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura> .
+_:genid13 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Receptor modela al Consumidor Final, y engloba:\n1) Los particulares, en el sentido de personas que no tienen la condición de empresarios o profesionales\n2) Los empresarios o profesionales, por las operaciones que realicen al margen de su actividad económica\n3) Otras  entidades,  como  asociaciones  o  fundaciones,  que  carecen  de  la  condición  de  empresario  o  profesional  o,teniéndola, actúan al margen de ella\n4) Las Administraciones públicas, cuando actúen en el ejercicio de sus funciones públicas"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor> <http://www.w3.org/2000/01/rdf-schema#label> "Receptor"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "MEMENTO IVA 9091\nMIVA nº10 s."@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial> <http://www.w3.org/2000/01/rdf-schema#comment> "Creación para simplificar el cumplimiento de las obligaciones formales por parte de los sujetos pasivos, como es el caso del régimen simplificado o el de recargo de equivalencia y, en otros casos, de evitar una posible doble imposición, como en el caso del régimen de bienes usados.\nLos regímenes especiales tienen carácter voluntario, a excepción del régimen especial aplicable a las operaciones con oro de inversión, del régimen especial de las agencias de viajes y del régimen especial del recargo de equivalencia, que son obligatorios."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial> <http://www.w3.org/2000/01/rdf-schema#label> "Regímen Especial"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Representación
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Representaci\u00F3n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Representaci\u00F3n> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligaci\u00F3n_Particular> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Representaci\u00F3n> <http://www.w3.org/2000/01/rdf-schema#label> "Representante de no establecidos"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion> .
+_:genid14 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol> <http://www.w3.org/2000/01/rdf-schema#comment> "Clase adicional para generalizar las clases de Sujeto Pasivo y Receptor en una clase Persona."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol> <http://www.w3.org/2000/01/rdf-schema#label> "Rol"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura> .
+_:genid16 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid17 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion> .
+_:genid17 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneObligacion> .
+_:genid18 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura> .
+_:genid19 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid19 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA> .
+_:genid20 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid20 <http://www.w3.org/2002/07/owl#onClass> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona  o  entidad  que  realiza  las  operaciones  sujetas  al  impuesto\n(empresarios o profesionales: nº 9142 ) y que está obligada al pago del mismo y al cumplimiento de las obligaciones formales.\nEn ocasiones, también responden del pago del tributo personas distintas del sujeto pasivo (responsablesdel impuesto: nº 9532 )"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> <http://www.w3.org/2000/01/rdf-schema#label> "Sujeto Pasivo"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "MEMENTO IVA 9500\nMIVA nº1300 s.\nLIVA art. 84 a 70"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Aleman_S.L
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Aleman_S.L> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Aleman_S.L> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Aleman_S.L> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_1> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Aleman_S.L> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#CompraMateriales> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#codigoMoneda> "EUR"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descripcion> "Materiales para montaje de una cadena industrial."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#domicilioFiscal> "Munich, Alemania"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#fechaExpedicion> "01/09/2020"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#identificador> "EJEMPLO_1"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#importe> "1.149.500"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#CompraMateriales
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#CompraMateriales> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#CompraMateriales> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operaci\u00F3n_Sujeta> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Coruña
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Coru\u00F1a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Coru\u00F1a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Excures
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Excures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Excures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Excures> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_1> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosMedicosYSanitarios
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosMedicosYSanitarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosMedicosYSanitarios> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosMedicosYSanitarios> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion> "Los servicios de hospitalización o asistencia sanitaria y los relacionados directamente con ellos, realizados por entidades de Derecho público o por entidades privadas en régimen de precios autorizados o comunicados;\n\nLa  asistencia  a  personas  físicas  por  profesionales  médicos  o  sanitarios,  cualquiera  que  sea  la  persona destinataria de dichos servicios. La exención comprende las prestaciones de asistencia médica, quirúrgica y sanitaria,relativas  al  diagnóstico,  prevención  y  tratamiento  de  enfermedades,  incluidos  análisis  clínicos  y  exploraciones radiológicas. Esta exención se refiere a los servicios que se prestan fuera de los establecimientos hospitalarios;\n\nLas  entregas  de  sangre,  plasma  sanguíneo  y  demás  fluidos,  tejidos  y  otros  elementos  del  cuerpo  humano efectuadas con fines médicos o de investigación o para su procesamiento con idénticos fines. No se aplica la exenciónen aquellas entregas que se utilicen para fabricar un medicamento (TJUE 5-1-16, asunto TMD C-412/15; DGT CV25-6-19 );\n\nLas  prestaciones  de  servicios,  realizadas  en  el  ámbito  de  sus  respectivas  profesiones,  por  estomatólogo,odontólogos, mecánicos dentistas y protésicos dentales, aunque actúen a través de una sociedad o entidad, que facture a los destinatarios de los mismos ( DGT 29-5-95 ). También la entrega, reparación y colocación de prótesis dentales y ortopedias maxilares realizadas por los mismos, cualquiera que sea la persona a cuyo cargo se realicenlas operaciones;\n\nEl transporte de enfermos o heridos en ambulancia o vehículos especialmente adaptados para ello, incluidos(  DGT  28-4-86  ,  4-6-89  y  DGT  CV  16-7-86  )  los  helicópteros  dedicados  exclusivamente  a  dicha  actividad  y especialmente adaptados. \n\nLas  entregas  de  bienes  y  prestaciones  de  servicios  que  realiza  la  Seguridad  Social  para  el  cumplimiento  de sus fines, directamente o a través de sus entidades gestoras o colaboradoras, exclusión hecha de las entregas de medicamentos o material sanitario realizadas por cuenta de la Seguridad Social"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosMedicosYSanitarios> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion> "Entrega de medicamentos para ser consumidos fuera de los establecimientos señalados.\n\nServicios Veterinarios.\n\nArrendamientos de bienes (salas, equipos, materiales) efectuados por las entidades mencionadas.\n\nTransporte  realizado  en  autotaxis;  ni  el  servicio  de  transporte  de  órganos  humanos  paratrasplantes ( DGT 6-5-94 );"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosMedicosYSanitarios> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precisionSobreExencion> "1)    Se  consideran  directamente  relacionados  con  la  hospitalización  o  asistencia  sanitaria  los  servicios  de alimentación y alojamiento de enfermos y acompañantes, pero no a personas distintas de ellos; los servicios de quirófano, suministro de medicamentos y material sanitario. No se comprende el alquiler de aparatos de TV. En el contrato de concesión de obra pública para la redacción del proyecto, construcción y explotación de un hospital el único objeto del contrato es la prestación de un conjunto de servicios que responden a una finalidad  común,  la  gestión  hospitalaria,  con  el  objetivo  de  atender  no  sólo  el  alojamiento  y  manutención de los pacientes, sino todas las necesidades del centro hospitalario. El destinatario de dichos servicios es la Administración y no los usuarios de la infraestructura, por lo que los servicios prestados no pueden considerarse como de alojamiento, al no ser sus destinatarios los particulares ( TS 1-6-17, EDJ 96419 ).2)  Se entiende por precios autorizados o comunicados aquellos cuya modificación está sujeta a la previa autorización o comunicación a algún órgano de la Administración ( RIVA art.4 ).3)    La  exención  comprende  la  asistencia  sanitaria  externa,  aunque  no  implique  hospitalización:  análisis clínicos,  estudios  radiológicos,  etc.  De  otra  parte,  los  servicios  mencionados  están  exentos  cuando  se presten  materialmente  a  personas  físicas,  aunque  quien  figure  en  la  factura  sea  un  tercero.  Los  análisis clínicos, de carácter preventivo, efectuados por un laboratorio de Derecho privado, previa prescripción de un médico generalista, pueden estar exentos, en cuanto sea asistencia sanitaria prestada por un establecimiento reconocido ( TJUE 8-6-06, C-106/05 ). No es necesario que exista una relación de confianza entre el médico y la persona tratada, por lo que los servicios de análisis clínicos prestados por el especialista al laboratorio seencuentran exentos ( TJUE 18-9-19, asunto Wolf-Henning C-700/17 ).4)    El  transporte  de  órganos  y  muestras  biológicas  de  origen  humano  para  diferentes  hospitales  no  está exento, aunque los servicios se retribuyan por la Seguridad Social, porque no es una prestación relacionada directamente con las de carácter médico. No se puede calificar al transportista de «entidad de Derecho público» ni de «establecimiento de la misma naturaleza legalmente reconocido» ( TJUE 2-7-15, C-334/14 )."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosMedicosYSanitarios> <http://www.w3.org/2000/01/rdf-schema#label> "Exención en Servicios Médicos y Sanitarios"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosSociales
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosSociales> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosSociales> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosSociales> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion> "La asistencia social, en la que se incluyen los servicios que se indican a continuación:\n -  protección de la infancia y juventud, que comprende los servicios de rehabilitación y formación de niños y  jóvenes,  asistencia  a  lactantes,  custodia  y  atención  a  niños  (desde  1-1-2014  se  suprime  la  limitación  de ser menores de seis años de edad), realización de cursos, excursiones y análogos prestados a menores de veinticinco años de edad;\n–   asistencia a la tercera edad;\n–   educación especial y asistencia a personas con discapacidad.\n–   acción social comunitaria y familiar, que comprende los servicios sociales en una comunidad concreta y orientada a las familias que la integran, para prevenir la marginación social y la inserción social en procesos de inadaptación. Los servicios pueden consistir en: ayuda a domicilio, centros de día, hogares sustitutos, mini residencias, viviendas tuteladas y similares ( DGT 21-11-86 );\n–   reinserción social y prevención de la delincuencia;\n–   asistencia  a  minorías  étnicas,  refugiados  y  asilados,  transeúntes,  personas  con  cargas  familiares  no compartidas, exreclusos, alcohólicos y toxicómanos;\n–   la prestación por entidades privadas de carácter social, de servicios relativos a la adopción de menores( DGT 9-12-96 );\n–   cooperación para el desarrollo ( LIVA art.20.uno.8º ).\n\nCesiones  de  personal  realizadas,  en  el  cumplimiento  de  sus  fines,  por  entidades  religiosas inscritas en el Registro correspondiente del Ministerio de Justicia, para el desarrollo de las siguientes actividades:\n–   Hospitalización y asistencia sanitaria y demás actividades relacionadas con las mismas.\n–   Asistencia social (las comprendidas en nº 9272 ).\n–   Educación, enseñanza, formación y reciclaje profesional\n\nEntidades sin fin lucrativo y colegios profesionales. Están exentas las prestaciones de servicios y entregas de bienes accesorias a las mismas efectuadas directamente a sus miembros por organismos o entidades legalmente reconocidos  que  no  tengan  finalidad  lucrativa,  cuyos  objetivos  sean  de  naturaleza  política,  sindical,  religiosa, patriótica, filantrópica o cívica, realizadas para la consecución de sus finalidades específicas"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosSociales> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion> "Entregas de bienes a terceros por los centros ocupacionales ( DGT 5-6-86 );"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosSociales> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precisionSobreExencion> "La mediación en los servicios de guarda de niños solo está exenta si el propio servicio de guarda cumple los requisitos para beneficiarse de la exención ( TJUE 9-2-06, C-415/04 ).2)\n\nNi los cuidadores, ni las empresa de trabajo temporal que ceden a estos empleados, entran en el concepto de «organismos a los que se ha reconocido carácter social», previsto en la Dir 2006/112/CE art.132.1.g ) ( TJUE 12-3-15,C-594/13 ).\n\n\nSe consideran ENTIDADES O ESTABLECIIENTOS DE CARÁCTER SOCIAL aquellos en los que concurran los siguientes requisitos:\n- Carecer de finalidad lucrativa y dedicar los beneficios eventualmente obtenidos al desarrollo de actividades exentas de idéntica naturaleza. El carácter «no lucrativo » de los establecimientos privados se determina en función  de  todas  sus  actividades,  no  solo  de  las  exentas.  Aunque  la  entidad  pretenda  obtener  un  superavit anual en sus cuentas, puede apreciarse ese carácter siempre que no exista intención u obligación de repartirlo entre sus socios ( TJUE 21-3-02 ).\n- Los cargos de presidente, patrono o representante legal deben ser gratuitos y carecer de interés en los resultados económicos de la explotación, por sí mismos o a través de persona interpuesta.\n- Los  socios,  comuneros  o  partícipes  de  las  entidades  o  establecimientos  y  sus  cónyuges  o  parientes consanguíneos, hasta el segundo grado inclusive, no pueden ser destinatarios principales de las operaciones exentas, ni gozar de condiciones especiales en la prestación de los servicios (este requisito no se exige en las prestaciones de servicios relativas a asistencia social y servicios deportivos, ver nº 9272 y nº 9284 ( LIVAart.20.uno.8.º y 13.º )."@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_1
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_1> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#MaterialesObra> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_1> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_1> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Coru\u00F1a> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_1> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#baseImponible> "950.000"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#MaterialesObra
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#MaterialesObra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#MaterialesObra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item> .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#MaterialesObra> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cantidad> "1"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#MaterialesObra> <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoImpositivo> "21"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/kos/hacienda/iva/tipo-operacion
+<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/iva/tipo-operacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/iva/tipo-operacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicador del tipo de operación de una operación sujeta."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de operación relacionada con un hecho imponible."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion> <http://www.w3.org/2000/01/rdf-schema#label> "Tipo de operación"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de operación"@es .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

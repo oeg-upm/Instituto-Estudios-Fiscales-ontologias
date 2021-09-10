@@ -1,0 +1,689 @@
+@prefix : <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> .
+
+<http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva> rdf:type owl:Ontology ;
+                                                             owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva/1.0.0> ;
+                                                             owl:imports <http://www.w3.org/2004/02/skos/core> ;
+                                                             <http://purl.org/dc/elements/1.1/creator> "Alberto Megina Gonzalo (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                       "Mario de Lucas García (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
+                                                                                                       "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
+                                                             <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/def/hacienda/iva" ;
+                                                             <http://purl.org/dc/elements/1.1/title> "Ontología que modeliza el Impuesto sobre el Valor Añadido siguiendo el marco impuesto por la Ley 37/1992 sobre el Valor Añadido (LIVA) y el reglamento del impuesto RD 1624/1992 (RIVA)."@es ;
+                                                             <http://purl.org/dc/terms/hasFormat> "http://vocab.linkeddata.es/def/hacienda/iva.owl" ;
+                                                             <http://purl.org/dc/terms/issued> "2021-07-20" ;
+                                                             <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
+                                                             <http://purl.org/vocab/vann/preferredNamespacePrefix> "iva" ;
+                                                             <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.linkeddata.es/def/hacienda/iva#" ;
+                                                             rdfs:comment "Esta ontología se ha creado en el marco de una colaboración entre el Ontology Engineering Group y los Institutos Fiscales de Hacienda" ;
+                                                             owl:versionInfo "First official release"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasFormat
+<http://purl.org/dc/terms/hasFormat> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA
+:acogidoA rdf:type owl:ObjectProperty ;
+          rdfs:domain :SujetoPasivo ;
+          rdfs:range :RegimenEspecial ;
+          rdfs:comment "Relación entre Sujeto Pasivo y Régimen Especial. Modela una relación de inclusión de un Sujeto Pasivo dentro de un determinado régimen especial por cumplir los requisitos exigidos."@es ;
+          rdfs:label "Acogido a un Regímen Especial"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion
+:cometeInfraccion rdf:type owl:ObjectProperty ;
+                  rdfs:domain :SujetoPasivo ;
+                  rdfs:range :Infraccion ;
+                  rdfs:comment "Relación entre Sujeto Pasivo e Infracción. Modela la acción de cometer una infracción tributaria por parte de una Persona."@es ;
+                  rdfs:label "Comete"@es ;
+                  rdfs:seeAlso """MEMENTO IVA 11080
+MIVA nº 7450"""@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem
+:contieneItem rdf:type owl:ObjectProperty ;
+              rdfs:domain :Factura ;
+              rdfs:range :Item ;
+              rdfs:comment "Relación entre  Factura e Item. Modela la acción de contener un item dentro de una determinada Factura."@es ;
+              rdfs:label "Contiene Item"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura
+:emiteFactura rdf:type owl:ObjectProperty ;
+              rdfs:domain :SujetoPasivo ;
+              rdfs:range :Factura ;
+              rdfs:comment "Relación entre Sujeto Pasivo y Factura. Modela la relación de emitir una factura por parte de una persona."@es ;
+              rdfs:label "Emite"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion
+:realizaOperacion rdf:type owl:ObjectProperty ;
+                  rdfs:domain :SujetoPasivo ;
+                  rdfs:range :Operacion ;
+                  rdfs:comment "Relación entre Sujeto Pasivo y Operación. Modela la realización de una operación por parte de un sujeto pasivo."@es ;
+                  rdfs:label "Realiza operación"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura
+:recibeFactura rdf:type owl:ObjectProperty ;
+               rdfs:domain :Receptor ;
+               rdfs:range :Factura ;
+               rdfs:comment "Relación entre Recepto y Factura. Modela la acción en la que un receptor recibe una determinada factura."@es ;
+               rdfs:label "Recibe"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera
+:tieneCabecera rdf:type owl:ObjectProperty ;
+               rdfs:domain :Factura ;
+               rdfs:range :Cabecera ;
+               rdfs:comment "Relación entre Factura y Cabecera. Modela la relación de pertenencia de una cabecera a una factura."@es ;
+               rdfs:label "Tiene cabecera"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion
+:tieneLugarRealizacion rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Factura ;
+                       rdfs:range :LugarRealizacion ;
+                       rdfs:comment "Relación entre Factura y Lugar de realización. Indica un determinado lugar donde se emitió la factura."@es ;
+                       rdfs:label "Lugar de realización"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneObligacion
+:tieneObligacion rdf:type owl:ObjectProperty ;
+                 rdfs:domain :SujetoPasivo ;
+                 rdfs:range :Obligacion ;
+                 rdfs:comment "Relación entre Sujeto Pasivo y Obligación. Modela la existencia de obligaciones a tratar por parte de los sujetos pasivos del IVA."@es ;
+                 rdfs:label "Tiene Obligación"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol
+:tieneRol rdf:type owl:ObjectProperty ;
+          rdfs:domain :Persona ;
+          rdfs:range :Rol ;
+          rdfs:comment "Relación entre Persona y Rol. Modela la relación de rol con persona de forma que una persona pueda realizar el rol de sujeto pasivo o de receptor en un determinado momento."@es ;
+          rdfs:label "Tiene rol"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion
+:tipoOperacion rdf:type owl:ObjectProperty ;
+               rdfs:domain :Operacion ,
+                           :Operación_Sujeta ;
+               rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                   owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/iva/tipo-operacion>
+                                                 ]
+                                               ) ;
+                            rdf:type owl:Class
+                          ] .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#actividadEmpresarial
+:actividadEmpresarial rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Persona ;
+                      rdfs:range xsd:string ;
+                      rdfs:comment "Descripción del código de la actividad empresarial de una persona en función del CNAE"@es ;
+                      rdfs:label "Actividad empresarial"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#baseImponible
+:baseImponible rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Item ;
+               rdfs:range owl:real ;
+               rdfs:comment "La base imponible es el elemento cuantitativo del hecho imponible sobre el que se aplica el tipo impositivo paracalcular la cuota tributaria."@es ;
+               rdfs:label "Base Imponible"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cantidad
+:cantidad rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Item ;
+          rdfs:range xsd:integer ;
+          rdfs:comment "Número de productos iguales contenidos en la factura."@es ;
+          rdfs:label "Cantidad"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#codigoMoneda
+:codigoMoneda rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Cabecera ;
+              rdfs:range rdfs:Literal ;
+              rdfs:comment "Código indicativo de la moneda utilizada."@es ;
+              rdfs:label "Código moneda"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descripcion
+:descripcion rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Item ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Comentario general acerca de la factura."@es ;
+             rdfs:label "Descripción"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descuento
+:descuento rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Item ;
+           rdfs:range owl:real ;
+           rdfs:comment "Indicador de un descuento aplicado al item."@es ;
+           rdfs:label "Descuento"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#direccion
+:direccion rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Persona ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Dirección física de una persona."@es ;
+           rdfs:label "Dirección"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#domicilioFiscal
+:domicilioFiscal rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Cabecera ;
+                 rdfs:comment "Domicilio fiscal del Sujeto Pasivo, es decir, el lugar de localización del obligado tributario en sus relaciones con las AAPP."@es ;
+                 rdfs:label "Domicilio fiscal"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#fechaExpedicion
+:fechaExpedicion rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Cabecera ;
+                 rdfs:range xsd:dateTime ;
+                 rdfs:comment "Indicador de la fecha en la que se realizó la factura."@es ;
+                 rdfs:label "Fecha de expedición"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion
+:hechoImponibleCubiertosEnExencion rdf:type owl:DatatypeProperty ;
+                                   rdfs:domain :Exencion ;
+                                   rdfs:comment "Hecho Imponible cubierto en una exención"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion
+:hechoImponibleNoCubiertosEnExencion rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain :Exencion ;
+                                     rdfs:label "Hecho imponible no cubierto en una exención"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#identificador
+:identificador rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Cabecera ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Identificador único de una factura."@es ;
+               rdfs:label "Identificador"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#importe
+:importe rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Item ;
+         rdfs:range xsd:long ;
+         rdfs:comment "Coste total de un conjunto de items."@es ;
+         rdfs:label "Importe"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#modalidad
+:modalidad rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Cabecera ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Indicador de la modalidad concreta de una factura."@es ;
+           rdfs:label "Modalidad"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#nombre
+:nombre rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Persona ;
+        rdfs:range xsd:string ;
+        rdfs:comment "Indicador del nombre de una persona."@es ;
+        rdfs:label "Nombre"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precioUnitario
+:precioUnitario rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Item ;
+                rdfs:range owl:real ;
+                rdfs:comment "Precio individual de cada item."@es ;
+                rdfs:label "Precio unitario"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precisionSobreExencion
+:precisionSobreExencion rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Exencion .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoImpositivo
+:tipoImpositivo rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Item ;
+                rdfs:range owl:real ;
+                rdfs:comment "Porcentaje aplicado al coste del item. Existen 3 tipos impositivos: tipo general (21%), reducido (10%)  y superreducido (4%)."@es ;
+                rdfs:label "Tipo impositivo"@es ;
+                rdfs:seeAlso """MEMENTO IVA 10140
+MIVA nº2000 s."""@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion
+:tipoOperacion rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:string .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#version
+:version rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Cabecera ;
+         rdfs:range owl:real ;
+         rdfs:comment "Indicador del número de versión de factura electrónica utilizada."@es ;
+         rdfs:label "Versión"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera
+:Cabecera rdf:type owl:Class ;
+          rdfs:comment "Forma parte de la estructura de una factura electrónica, en base al modelo del Ministerio de Asuntos Económicos y Transformación Digital, y contiene los datos globales e identificativos de una factura."@es ;
+          rdfs:label "Cabecera"@es ;
+          rdfs:seeAlso "https://www.facturae.gob.es/formato/Documents/EspanolFacturae3_0.pdf"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Deducción
+:Deducción rdf:type owl:Class ;
+           rdfs:subClassOf :Obligación_Particular ;
+           rdfs:label "Deducción"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Devolución
+:Devolución rdf:type owl:Class ;
+            rdfs:subClassOf :Obligación_Particular ;
+            rdfs:label "Devolución"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion
+:Exencion rdf:type owl:Class ;
+          rdfs:comment "Modela el privilegio conforme a lo establecido por la Ley LIVA, que excluye del pago del IVA, un hecho realizado por un Sujeto Pasivo."@es ;
+          rdfs:label "Exención"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnExportacionDeBienes
+:ExencionEnExportacionDeBienes rdf:type owl:Class ;
+                               rdfs:subClassOf :Exencion .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnImportacionDeBienes
+:ExencionEnImportacionDeBienes rdf:type owl:Class ;
+                               rdfs:subClassOf :Exencion .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnOperacionIntracomunitaria
+:ExencionEnOperacionIntracomunitaria rdf:type owl:Class ;
+                                     rdfs:subClassOf :Exencion .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura
+:Factura rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :contieneItem ;
+                           owl:allValuesFrom :Item
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneCabecera ;
+                           owl:allValuesFrom :Cabecera
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneLugarRealizacion ;
+                           owl:allValuesFrom :LugarRealizacion
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :contieneItem ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Item
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneCabecera ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Cabecera
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneLugarRealizacion ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :LugarRealizacion
+                         ] ;
+         rdfs:comment "Modelado de una factura , en base a las guías del Ministerio de Asuntos Económicos y Transformación Digital, y contiene los elementos esenciales: Descripción global, recogida en la clase Cabecera y los conceptos contenidos en la factura, que están recogidos en la clase Item."@es ;
+         rdfs:label "Factura"@es ;
+         rdfs:seeAlso "https://www.facturae.gob.es/formato/Documents/EspanolFacturae3_0.pdf"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion
+:Infraccion rdf:type owl:Class ;
+            rdfs:comment "Consiste en la transgresión de una norma fiscal por parte de una persona física o jurídica u otra entidad. Se calificarán y sancionarán conforme a lo establecido en la Ley General Tributaria (Art. 191-206 ,LGT)."@es ;
+            rdfs:label "Infracción"@es ;
+            rdfs:seeAlso "LIVA art.170 y 171 ; RIVA art.83"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item
+:Item rdf:type owl:Class ;
+      rdfs:comment "Artículo o servicio incluido en la factura. Se detallan toda la información relevante como el precio del elemento individual y tipo impositivo."@es ;
+      rdfs:label "Item"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion
+:LugarRealizacion rdf:type owl:Class ;
+                  rdfs:comment """Ámbito espacial de aplicación:
+ 1) Territorio  peninsular  español  y  las  Islas  Baleares,  con inclusión de las islas adyacentes, el mar territorial hasta el límite de 12 millas náuticas y el espacio aéreo correspondiente a todos estos territorios
+ 2) Se excluyen del ámbito del impuesto el Archipiélago Canario, y los territorios de Ceuta y Melilla."""@es ;
+                  rdfs:label "Lugar de Realización"@es ;
+                  rdfs:seeAlso """MEMENTO IVA 9370
+MIVA nº400 s.
+LIVA art. 68"""@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion
+:Obligacion rdf:type owl:Class ;
+            rdfs:comment "La obligación tributaria es toda aquella obligación que surge como consecuencia de la necesidad de pagar tributos."@es ;
+            rdfs:label "Obligación"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligación_General
+:Obligación_General rdf:type owl:Class ;
+                    rdfs:subClassOf :Obligacion ;
+                    rdfs:comment "Subconjunto de obligaciones que tienen un carácter general."@es ;
+                    rdfs:label "Obligación General"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligación_Particular
+:Obligación_Particular rdf:type owl:Class ;
+                       rdfs:subClassOf :Obligacion ;
+                       rdfs:comment "Subconjunto de obligaciones que tienen un tratamiento específico individual."@es ;
+                       rdfs:label "Obligación Particular"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion
+:Operacion rdf:type owl:Class ;
+           rdfs:comment """Clase que engloba los diferentes tipos de operación que contempla la Ley del IVA.
+Una operación es un hecho que puede o no estar gravado con el impuesto."""@es ;
+           rdfs:label "Operación"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operación_No_Sujeta
+:Operación_No_Sujeta rdf:type owl:Class ;
+                     rdfs:subClassOf :Operacion ;
+                     rdfs:comment """La  Ley  define  como  no  sujetas  al  impuesto  determinadas  operaciones,  bien  porque  se  realizan  por  personas que  no  son  o  no  actúan  como  empresarios, bien por simplificación o por razones de neutralidad.
+9167 - Transmisión de negocio en marcha
+9175 - Operaciones de las AAPP
+9180 - Entregas y servicios con fines de promoción
+9185 - Prestación de servicios en régimen de dependencia
+9190 - Autoconsumos
+9195 - Concesiones y autorizaciones administrativas
+9200 - Otras operaciones no sujetas"""@es ;
+                     rdfs:label "Operación No Sujeta"@es ;
+                     rdfs:seeAlso """MEMENTO IVA 9160
+MIVA nº270 s."""@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operación_Sujeta
+:Operación_Sujeta rdf:type owl:Class ;
+                  rdfs:subClassOf :Operacion ;
+                  rdfs:comment "Grupo de opraciones en las que la aplicación del impuesto es obligatoria. Solo están sujetas las operaciones realizadas a título oneroso, mediante contraprestación, en dinero o en especie."@es ;
+                  rdfs:label "Operación Sujeta"@es ;
+                  rdfs:seeAlso """MEMENTO IVA 9112
+MIVA nº405 s."""@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona
+:Persona rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneRol ;
+                           owl:allValuesFrom :Rol
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :tieneRol ;
+                           owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Rol
+                         ] ;
+         rdfs:comment "Entidad para modelar los atributos necesarios de la persona involucrada en el proceso del IVA."@es ;
+         rdfs:label "Persona"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor
+:Receptor rdf:type owl:Class ;
+          rdfs:subClassOf :Rol ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :recibeFactura ;
+                            owl:allValuesFrom :Factura
+                          ] ;
+          rdfs:comment """Receptor modela al Consumidor Final, y engloba:
+1) Los particulares, en el sentido de personas que no tienen la condición de empresarios o profesionales
+2) Los empresarios o profesionales, por las operaciones que realicen al margen de su actividad económica
+3) Otras  entidades,  como  asociaciones  o  fundaciones,  que  carecen  de  la  condición  de  empresario  o  profesional  o,teniéndola, actúan al margen de ella
+4) Las Administraciones públicas, cuando actúen en el ejercicio de sus funciones públicas"""@es ;
+          rdfs:label "Receptor"@es ;
+          rdfs:seeAlso """MEMENTO IVA 9091
+MIVA nº10 s."""@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial
+:RegimenEspecial rdf:type owl:Class ;
+                 rdfs:comment """Creación para simplificar el cumplimiento de las obligaciones formales por parte de los sujetos pasivos, como es el caso del régimen simplificado o el de recargo de equivalencia y, en otros casos, de evitar una posible doble imposición, como en el caso del régimen de bienes usados.
+Los regímenes especiales tienen carácter voluntario, a excepción del régimen especial aplicable a las operaciones con oro de inversión, del régimen especial de las agencias de viajes y del régimen especial del recargo de equivalencia, que son obligatorios."""@es ;
+                 rdfs:label "Regímen Especial"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Representación
+:Representación rdf:type owl:Class ;
+                rdfs:subClassOf :Obligación_Particular ;
+                rdfs:label "Representante de no establecidos"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol
+:Rol rdf:type owl:Class ;
+     rdfs:subClassOf [ rdf:type owl:Restriction ;
+                       owl:onProperty :cometeInfraccion ;
+                       owl:someValuesFrom :Infraccion
+                     ] ;
+     rdfs:comment "Clase adicional para generalizar las clases de Sujeto Pasivo y Receptor en una clase Persona."@es ;
+     rdfs:label "Rol"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo
+:SujetoPasivo rdf:type owl:Class ;
+              rdfs:subClassOf :Rol ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :acogidoA ;
+                                owl:someValuesFrom :RegimenEspecial
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :emiteFactura ;
+                                owl:allValuesFrom :Factura
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :realizaOperacion ;
+                                owl:allValuesFrom :Operacion
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :tieneObligacion ;
+                                owl:allValuesFrom :Obligacion
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :emiteFactura ;
+                                owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Factura
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :acogidoA ;
+                                owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :RegimenEspecial
+                              ] ;
+              rdfs:comment """Persona  o  entidad  que  realiza  las  operaciones  sujetas  al  impuesto
+(empresarios o profesionales: nº 9142 ) y que está obligada al pago del mismo y al cumplimiento de las obligaciones formales.
+En ocasiones, también responden del pago del tributo personas distintas del sujeto pasivo (responsablesdel impuesto: nº 9532 )"""@es ;
+              rdfs:label "Sujeto Pasivo"@es ;
+              rdfs:seeAlso """MEMENTO IVA 9500
+MIVA nº1300 s.
+LIVA art. 84 a 70"""@es .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Aleman_S.L
+:Aleman_S.L rdf:type owl:NamedIndividual ,
+                     :SujetoPasivo ;
+            :emiteFactura :Factura_1 ;
+            :realizaOperacion :CompraMateriales .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1
+:Cabecera_1 rdf:type owl:NamedIndividual ,
+                     :Cabecera ;
+            :codigoMoneda "EUR"@es ;
+            :descripcion "Materiales para montaje de una cadena industrial."@es ;
+            :domicilioFiscal "Munich, Alemania"@es ;
+            :fechaExpedicion "01/09/2020"@es ;
+            :identificador "EJEMPLO_1"@es ;
+            :importe "1.149.500"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#CompraMateriales
+:CompraMateriales rdf:type owl:NamedIndividual ,
+                           :Operación_Sujeta .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Coruña
+:Coruña rdf:type owl:NamedIndividual ,
+                 :LugarRealizacion .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Excures
+:Excures rdf:type owl:NamedIndividual ,
+                  :Receptor ;
+         :recibeFactura :Factura_1 .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosMedicosYSanitarios
+:ExencionServiciosMedicosYSanitarios rdf:type owl:NamedIndividual ,
+                                              :Exencion ;
+                                     :hechoImponibleCubiertosEnExencion """Los servicios de hospitalización o asistencia sanitaria y los relacionados directamente con ellos, realizados por entidades de Derecho público o por entidades privadas en régimen de precios autorizados o comunicados;
+
+La  asistencia  a  personas  físicas  por  profesionales  médicos  o  sanitarios,  cualquiera  que  sea  la  persona destinataria de dichos servicios. La exención comprende las prestaciones de asistencia médica, quirúrgica y sanitaria,relativas  al  diagnóstico,  prevención  y  tratamiento  de  enfermedades,  incluidos  análisis  clínicos  y  exploraciones radiológicas. Esta exención se refiere a los servicios que se prestan fuera de los establecimientos hospitalarios;
+
+Las  entregas  de  sangre,  plasma  sanguíneo  y  demás  fluidos,  tejidos  y  otros  elementos  del  cuerpo  humano efectuadas con fines médicos o de investigación o para su procesamiento con idénticos fines. No se aplica la exenciónen aquellas entregas que se utilicen para fabricar un medicamento (TJUE 5-1-16, asunto TMD C-412/15; DGT CV25-6-19 );
+
+Las  prestaciones  de  servicios,  realizadas  en  el  ámbito  de  sus  respectivas  profesiones,  por  estomatólogo,odontólogos, mecánicos dentistas y protésicos dentales, aunque actúen a través de una sociedad o entidad, que facture a los destinatarios de los mismos ( DGT 29-5-95 ). También la entrega, reparación y colocación de prótesis dentales y ortopedias maxilares realizadas por los mismos, cualquiera que sea la persona a cuyo cargo se realicenlas operaciones;
+
+El transporte de enfermos o heridos en ambulancia o vehículos especialmente adaptados para ello, incluidos(  DGT  28-4-86  ,  4-6-89  y  DGT  CV  16-7-86  )  los  helicópteros  dedicados  exclusivamente  a  dicha  actividad  y especialmente adaptados. 
+
+Las  entregas  de  bienes  y  prestaciones  de  servicios  que  realiza  la  Seguridad  Social  para  el  cumplimiento  de sus fines, directamente o a través de sus entidades gestoras o colaboradoras, exclusión hecha de las entregas de medicamentos o material sanitario realizadas por cuenta de la Seguridad Social"""@es ;
+                                     :hechoImponibleNoCubiertosEnExencion """Entrega de medicamentos para ser consumidos fuera de los establecimientos señalados.
+
+Servicios Veterinarios.
+
+Arrendamientos de bienes (salas, equipos, materiales) efectuados por las entidades mencionadas.
+
+Transporte  realizado  en  autotaxis;  ni  el  servicio  de  transporte  de  órganos  humanos  paratrasplantes ( DGT 6-5-94 );"""@es ;
+                                     :precisionSobreExencion "1)    Se  consideran  directamente  relacionados  con  la  hospitalización  o  asistencia  sanitaria  los  servicios  de alimentación y alojamiento de enfermos y acompañantes, pero no a personas distintas de ellos; los servicios de quirófano, suministro de medicamentos y material sanitario. No se comprende el alquiler de aparatos de TV. En el contrato de concesión de obra pública para la redacción del proyecto, construcción y explotación de un hospital el único objeto del contrato es la prestación de un conjunto de servicios que responden a una finalidad  común,  la  gestión  hospitalaria,  con  el  objetivo  de  atender  no  sólo  el  alojamiento  y  manutención de los pacientes, sino todas las necesidades del centro hospitalario. El destinatario de dichos servicios es la Administración y no los usuarios de la infraestructura, por lo que los servicios prestados no pueden considerarse como de alojamiento, al no ser sus destinatarios los particulares ( TS 1-6-17, EDJ 96419 ).2)  Se entiende por precios autorizados o comunicados aquellos cuya modificación está sujeta a la previa autorización o comunicación a algún órgano de la Administración ( RIVA art.4 ).3)    La  exención  comprende  la  asistencia  sanitaria  externa,  aunque  no  implique  hospitalización:  análisis clínicos,  estudios  radiológicos,  etc.  De  otra  parte,  los  servicios  mencionados  están  exentos  cuando  se presten  materialmente  a  personas  físicas,  aunque  quien  figure  en  la  factura  sea  un  tercero.  Los  análisis clínicos, de carácter preventivo, efectuados por un laboratorio de Derecho privado, previa prescripción de un médico generalista, pueden estar exentos, en cuanto sea asistencia sanitaria prestada por un establecimiento reconocido ( TJUE 8-6-06, C-106/05 ). No es necesario que exista una relación de confianza entre el médico y la persona tratada, por lo que los servicios de análisis clínicos prestados por el especialista al laboratorio seencuentran exentos ( TJUE 18-9-19, asunto Wolf-Henning C-700/17 ).4)    El  transporte  de  órganos  y  muestras  biológicas  de  origen  humano  para  diferentes  hospitales  no  está exento, aunque los servicios se retribuyan por la Seguridad Social, porque no es una prestación relacionada directamente con las de carácter médico. No se puede calificar al transportista de «entidad de Derecho público» ni de «establecimiento de la misma naturaleza legalmente reconocido» ( TJUE 2-7-15, C-334/14 )."@es ;
+                                     rdfs:label "Exención en Servicios Médicos y Sanitarios"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosSociales
+:ExencionServiciosSociales rdf:type owl:NamedIndividual ,
+                                    :Exencion ;
+                           :hechoImponibleCubiertosEnExencion """La asistencia social, en la que se incluyen los servicios que se indican a continuación:
+ -  protección de la infancia y juventud, que comprende los servicios de rehabilitación y formación de niños y  jóvenes,  asistencia  a  lactantes,  custodia  y  atención  a  niños  (desde  1-1-2014  se  suprime  la  limitación  de ser menores de seis años de edad), realización de cursos, excursiones y análogos prestados a menores de veinticinco años de edad;
+–   asistencia a la tercera edad;
+–   educación especial y asistencia a personas con discapacidad.
+–   acción social comunitaria y familiar, que comprende los servicios sociales en una comunidad concreta y orientada a las familias que la integran, para prevenir la marginación social y la inserción social en procesos de inadaptación. Los servicios pueden consistir en: ayuda a domicilio, centros de día, hogares sustitutos, mini residencias, viviendas tuteladas y similares ( DGT 21-11-86 );
+–   reinserción social y prevención de la delincuencia;
+–   asistencia  a  minorías  étnicas,  refugiados  y  asilados,  transeúntes,  personas  con  cargas  familiares  no compartidas, exreclusos, alcohólicos y toxicómanos;
+–   la prestación por entidades privadas de carácter social, de servicios relativos a la adopción de menores( DGT 9-12-96 );
+–   cooperación para el desarrollo ( LIVA art.20.uno.8º ).
+
+Cesiones  de  personal  realizadas,  en  el  cumplimiento  de  sus  fines,  por  entidades  religiosas inscritas en el Registro correspondiente del Ministerio de Justicia, para el desarrollo de las siguientes actividades:
+–   Hospitalización y asistencia sanitaria y demás actividades relacionadas con las mismas.
+–   Asistencia social (las comprendidas en nº 9272 ).
+–   Educación, enseñanza, formación y reciclaje profesional
+
+Entidades sin fin lucrativo y colegios profesionales. Están exentas las prestaciones de servicios y entregas de bienes accesorias a las mismas efectuadas directamente a sus miembros por organismos o entidades legalmente reconocidos  que  no  tengan  finalidad  lucrativa,  cuyos  objetivos  sean  de  naturaleza  política,  sindical,  religiosa, patriótica, filantrópica o cívica, realizadas para la consecución de sus finalidades específicas"""@es ;
+                           :hechoImponibleNoCubiertosEnExencion "Entregas de bienes a terceros por los centros ocupacionales ( DGT 5-6-86 );"@es ;
+                           :precisionSobreExencion """La mediación en los servicios de guarda de niños solo está exenta si el propio servicio de guarda cumple los requisitos para beneficiarse de la exención ( TJUE 9-2-06, C-415/04 ).2)
+
+Ni los cuidadores, ni las empresa de trabajo temporal que ceden a estos empleados, entran en el concepto de «organismos a los que se ha reconocido carácter social», previsto en la Dir 2006/112/CE art.132.1.g ) ( TJUE 12-3-15,C-594/13 ).
+
+
+Se consideran ENTIDADES O ESTABLECIIENTOS DE CARÁCTER SOCIAL aquellos en los que concurran los siguientes requisitos:
+- Carecer de finalidad lucrativa y dedicar los beneficios eventualmente obtenidos al desarrollo de actividades exentas de idéntica naturaleza. El carácter «no lucrativo » de los establecimientos privados se determina en función  de  todas  sus  actividades,  no  solo  de  las  exentas.  Aunque  la  entidad  pretenda  obtener  un  superavit anual en sus cuentas, puede apreciarse ese carácter siempre que no exista intención u obligación de repartirlo entre sus socios ( TJUE 21-3-02 ).
+- Los cargos de presidente, patrono o representante legal deben ser gratuitos y carecer de interés en los resultados económicos de la explotación, por sí mismos o a través de persona interpuesta.
+- Los  socios,  comuneros  o  partícipes  de  las  entidades  o  establecimientos  y  sus  cónyuges  o  parientes consanguíneos, hasta el segundo grado inclusive, no pueden ser destinatarios principales de las operaciones exentas, ni gozar de condiciones especiales en la prestación de los servicios (este requisito no se exige en las prestaciones de servicios relativas a asistencia social y servicios deportivos, ver nº 9272 y nº 9284 ( LIVAart.20.uno.8.º y 13.º )."""@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_1
+:Factura_1 rdf:type owl:NamedIndividual ,
+                    :Factura ;
+           :contieneItem :MaterialesObra ;
+           :tieneCabecera :Cabecera_1 ;
+           :tieneLugarRealizacion :Coruña ;
+           :baseImponible "950.000"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#MaterialesObra
+:MaterialesObra rdf:type owl:NamedIndividual ,
+                         :Item ;
+                :cantidad "1"@es ;
+                :tipoImpositivo "21"@es .
+
+
+###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/iva/tipo-operacion
+<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/iva/tipo-operacion> rdf:type owl:NamedIndividual ,
+                                                                                    <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:tipoOperacion rdfs:comment "Indicador del tipo de operación de una operación sujeta."@es ,
+                            "Tipo de operación relacionada con un hecho imponible."@es ;
+               rdfs:label "Tipo de operación"@es ,
+                          "tipo de operación"@es .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
