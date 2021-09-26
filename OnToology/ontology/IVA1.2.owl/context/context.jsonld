@@ -1,0 +1,238 @@
+{
+  "@context" : {
+    "tieneObligacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneObligacion",
+      "@type" : "@id"
+    },
+    "tieneLugarRealizacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneLugarRealizacion",
+      "@type" : "@id"
+    },
+    "Operacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operacion"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Rol" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Rol"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Devolución" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Devolución"
+    },
+    "Receptor" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "hechoImponibleNoCubiertosEnExencion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion"
+    },
+    "ExencionEnOperacionIntracomunitaria" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnOperacionIntracomunitaria"
+    },
+    "Deducción" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Deducción"
+    },
+    "Exencion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Exencion"
+    },
+    "identificador" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#identificador",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "cantidad" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cantidad",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "nombre" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#nombre",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ExencionEnExportacionDeBienes" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnExportacionDeBienes"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "precioUnitario" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precioUnitario",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "descuento" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descuento",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "Persona" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona"
+    },
+    "modalidad" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#modalidad",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "direccion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#direccion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Obligacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligacion"
+    },
+    "cometeInfraccion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#cometeInfraccion",
+      "@type" : "@id"
+    },
+    "Infraccion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Infraccion"
+    },
+    "hechoImponibleCubiertosEnExencion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion"
+    },
+    "descripcion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#descripcion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "codigoMoneda" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#codigoMoneda",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "LugarRealizacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion"
+    },
+    "recibeFactura" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#recibeFactura",
+      "@type" : "@id"
+    },
+    "Obligación_Particular" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligación_Particular"
+    },
+    "fechaExpedicion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#fechaExpedicion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "acogidoA" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA",
+      "@type" : "@id"
+    },
+    "realizaOperacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion",
+      "@type" : "@id"
+    },
+    "emiteFactura" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#emiteFactura",
+      "@type" : "@id"
+    },
+    "Cabecera" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Operación_No_Sujeta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operación_No_Sujeta"
+    },
+    "version" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#version",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "tipoOperacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoOperacion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Operación_Sujeta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operación_Sujeta"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "baseImponible" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#baseImponible",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "tieneCabecera" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneCabecera",
+      "@type" : "@id"
+    },
+    "Representación" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Representación"
+    },
+    "tipoImpositivo" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tipoImpositivo",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "tieneRol" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#tieneRol",
+      "@type" : "@id"
+    },
+    "actividadEmpresarial" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#actividadEmpresarial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Factura" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura"
+    },
+    "precisionSobreExencion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#precisionSobreExencion"
+    },
+    "RegimenEspecial" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecial"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "contieneItem" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#contieneItem",
+      "@type" : "@id"
+    },
+    "SujetoPasivo" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujetoPasivo"
+    },
+    "Obligación_General" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Obligación_General"
+    },
+    "importe" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#importe",
+      "@type" : "http://www.w3.org/2001/XMLSchema#long"
+    },
+    "Item" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "domicilioFiscal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#domicilioFiscal"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "ExencionEnImportacionDeBienes" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionEnImportacionDeBienes"
+    }
+  }
+}

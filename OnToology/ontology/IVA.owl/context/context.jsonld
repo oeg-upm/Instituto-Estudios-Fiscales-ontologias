@@ -1,0 +1,208 @@
+{
+  "@context" : {
+    "tieneObligación" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#tieneObligación",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Regímen_Especial" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Regímen_Especial"
+    },
+    "Rol" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Rol"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Devolución" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Devolución"
+    },
+    "Receptor" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Receptor"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Deducción" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Deducción"
+    },
+    "identificador" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#identificador",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "cantidad" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#cantidad",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "nombre" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#nombre",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Lugar_Realización" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Lugar_Realización"
+    },
+    "Sujeto_Pasivo" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Sujeto_Pasivo"
+    },
+    "descuento" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#descuento",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "Operación" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Operación"
+    },
+    "Persona" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Persona"
+    },
+    "Infracción" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Infracción"
+    },
+    "modalidad" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#modalidad",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "cometeInfraccion" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#cometeInfraccion",
+      "@type" : "@id"
+    },
+    "tipo_operación" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#tipo_operación",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "actividad_empresarial" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#actividad_empresarial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "dirección" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#dirección",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "codigoMoneda" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#codigoMoneda",
+      "@type" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "recibeFactura" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#recibeFactura",
+      "@type" : "@id"
+    },
+    "Obligación_Particular" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Obligación_Particular"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "acogidoA" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#acogidoA",
+      "@type" : "@id"
+    },
+    "tieneLugarRealización" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#tieneLugarRealización",
+      "@type" : "@id"
+    },
+    "realizaOperación" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#realizaOperación",
+      "@type" : "@id"
+    },
+    "emiteFactura" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#emiteFactura",
+      "@type" : "@id"
+    },
+    "Cabecera" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Cabecera"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Operación_No_Sujeta" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Operación_No_Sujeta"
+    },
+    "version" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#version",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "Operación_Sujeta" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Operación_Sujeta"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "baseImponible" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#baseImponible",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "tieneCabecera" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#tieneCabecera",
+      "@type" : "@id"
+    },
+    "Representación" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Representación"
+    },
+    "tipoImpositivo" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#tipoImpositivo",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "tieneRol" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#tieneRol",
+      "@type" : "@id"
+    },
+    "Factura" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Factura"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "fecha_expedición" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#fecha_expedición",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "contieneItem" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#contieneItem",
+      "@type" : "@id"
+    },
+    "Obligación" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Obligación"
+    },
+    "Obligación_General" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Obligación_General"
+    },
+    "importe" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#importe",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "Item" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#Item"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "lugar_expedición" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#lugar_expedición",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "precio_unitario" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#precio_unitario",
+      "@type" : "http://www.w3.org/2002/07/owl#real"
+    },
+    "descripción" : {
+      "@id" : "http://vocab.linkeddata.es/def/hacienda/iva#descripción",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}
