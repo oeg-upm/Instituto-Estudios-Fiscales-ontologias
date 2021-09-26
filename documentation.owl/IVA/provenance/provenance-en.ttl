@@ -7,8 +7,10 @@
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
 :agent0 a prov:Agent; foaf:name "Alberto Megina Gonzalo (Ontology Engineering Group - Universidad Politécnica de Madrid)".
 :agent1 a prov:Agent; foaf:name "Mario de Lucas García (Ontology Engineering Group - Universidad Politécnica de Madrid)".
-:agent2 a prov:Agent; foaf:name "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)".
+:agent2 a prov:Agent; foaf:name "María Poveda Villalón (Ontology Engineering Group - Universidad Politécnica de Madrid)".
+:agent3 a prov:Agent; foaf:name "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid)".
