@@ -1,0 +1,89 @@
+@prefix : <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix iva: <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@base <http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos> .
+
+
+:Aldea_del_Fresno rdf:type iva:LugarRealizacion .
+:Coruña rdf:type iva:LugarRealizacion .
+
+:Aleman_S.L rdf:type iva:RolSujetoPasivo ;
+            iva:emiteFactura :Factura_1 ;
+            iva:realizaOperacion :CompraMateriales .
+
+:Cabecera_1 rdf:type iva:Cabecera ;
+            iva:domicilioFiscal :Location_1 ;
+            iva:codigoMoneda "EUR"@es ;
+            iva:descripcion "Materiales para montaje de una cadena industrial" ;
+            iva:fechaExpedicion "2020-09-01T21:00:00"^^xsd:dateTime ;
+            iva:identificador "EJEMPLO_1" ;
+            iva:importe "1149500.0"^^xsd:float .
+
+:Cabecera_2 rdf:type iva:Cabecera ;
+            iva:codigoMoneda "EUR"^^xsd:string ;
+            iva:descripcion "Compra de un reloj e inversión en oro"^^xsd:string ;
+            iva:fechaExpedicion "2021-05-12T12:00:00"^^xsd:dateTime ;
+            iva:identificador "Ejemplo 2"^^xsd:string ;
+            iva:importe "3630.0"^^xsd:float .
+
+:CompraMateriales rdf:type iva:OperacionSujeta .
+
+:Dependiente_2 rdf:type iva:Persona ;
+               iva:actividadEmpresarial "4777"^^xsd:string .
+
+:Excures rdf:type iva:RolReceptor ;
+         iva:recibeFactura :Factura_1 .
+
+:Factura_1 rdf:type iva:Factura ;
+           iva:contieneItem :MaterialesObra ;
+           iva:tieneCabecera :Cabecera_1 ;
+           iva:tieneLugarRealizacion :Coruña ;
+           iva:baseImponible "950000.0"^^xsd:double .
+
+:Factura_2 rdf:type iva:Factura ;
+           iva:contieneItem :Item_Oro ,
+                            :Item_Reloj ;
+           iva:tieneCabecera :Cabecera_2 ;
+           iva:tieneLugarRealizacion :Aldea_del_Fresno ;
+           iva:baseImponible "8000.0"^^xsd:double .
+
+:Item_Oro rdf:type iva:Item ;
+          iva:baseImponible "5000.0"^^xsd:double ;
+          iva:cantidad 1 ;
+          iva:tipoImpositivo "0.0"^^xsd:double .
+
+:Item_Reloj rdf:type iva:Item ;
+            iva:baseImponible "3000.0"^^xsd:double ;
+            iva:cantidad 1 ;
+            iva:tipoImpositivo "21.0"^^xsd:double .
+
+:Location_1 rdf:type iva:LugarRealizacion ;
+            iva:domicilioFiscal "Múnich, Alemania"^^xsd:string .
+
+:MaterialesObra rdf:type iva:Item ;
+                iva:cantidad 1 ;
+                iva:tipoImpositivo "21.0"^^xsd:double .
+
+:Operacion_2 rdf:type iva:OperacionSujeta ;
+             iva:tieneExencion iva:ExencionRegimenOro .
+
+:Persona_2 rdf:type iva:Persona ;
+           iva:identificadorFiscal "01234567G"^^xsd:string ;
+           iva:nombre "Alfredo Del Bosque Frondoso"^^xsd:string ;
+           iva:direccion "Aldea del Fresno"^^xsd:string .
+
+:Receptor_2 rdf:type iva:RolReceptor .
+
+:SujPasivo_2 rdf:type iva:RolSujetoPasivo ;
+             iva:emiteFactura :Factura_2 ;
+             iva:acogidoARegimenEspecial iva:RegimenEspecialInversionEnOro ;
+             iva:operacion :Operacion_2 .
+
