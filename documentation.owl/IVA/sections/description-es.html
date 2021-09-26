@@ -1,3 +1,14 @@
 <h2 id="desc" class="list">Ontología sobre el Impuesto sobre el Valor Añadido (IVA): Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
-<span class="markdown">Descripci&oacute;n completa de la ontolog&iacute;a: en caso de ser posible, a&ntilde;adir un diagrama explicando c&oacute;omo las clases est&aacute;n relacionadas, ejemplos de uso, etc.</span>
+<span class="markdown">
+MODIFICAR POR LA DESCRIPCIÓN FINAL Y AÑADIR LAS IMAGENES CORRESPONDIENTES.
+    
+Uno de los conceptos principales alrededor del cual se organiza este modelo es el de Operación (iva:Operacion), que también se conoce normalmente como “Hecho Imponible”. Para este concepto se han creado dos subclasificaciones, que atienden a distintos aspectos que son relevantes en la modelización. Por un parte, se consideran las operaciones sujetas y no sujetas al impuesto del IVA (iva:OperacionSujeta e iva:OperacionNoSujeta), y para las operaciones sujetas se consideran aquellas que son no exentas y aquellas que son exentas de su aplicación (iva:OperacionNoExenta e iva:OperacionExenta). Por otra parte, también se ha considerado la clasificación inicial de tipos de operaciones relevantes en el caso del IVA, como son las entregas de bienes (iva:EntregaBienes), adquisiciones intracomunitarias (iva:AdquisicionIntracomunitaria), importaciones de bienes (iva:ImportacionBienes) y prestaciones de servicios (iva:PrestacionServicios). Es importante destacar que estas dos clasificaciones no son disjuntas, es decir, que una operación puede ser al mismo tiempo una entrega de bienes y ser una operación sujeta o no sujeta a la aplicación de IVA, porque se produzcan circunstancias que permitan un aspecto u otro. 
+
+Asociada a cada una de las operaciones que se pueden tener en cuenta aparece el concepto de Factura (iva:Factura), para el cual existe un modelo de referencia que se ha utilizado para generar la descripción correspondiente (el modelo de factura electrónica propuesto por el Ministerio de Hacienda). Algunos aspectos relevantes de una factura, de acuerdo con este modelo, son la cabecera (iva:Cabecera), que contiene su identificación, importe, moneda, descripción, fecha de expedición y domicilio fiscal, y los items (iva:Item) a los que se refiere la factura en relación con la correspondiente entrega de bien o prestación de servicios (con su cantidad, base imponible y tipo impositivo). Todos e
+
+
+
+
+
+</span>
 
