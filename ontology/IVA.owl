@@ -97,7 +97,8 @@ iva:contieneItem rdf:type owl:ObjectProperty ;
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#domicilioFiscal
 iva:domicilioFiscal rdf:type owl:ObjectProperty ;
-                    rdfs:domain iva:Cabecera ;
+                    rdfs:domain iva:Cabecera ,
+                                iva:RolSujetoPasivo ;
                     rdfs:range <http://schema.org/PostalAddress> .
 
 
@@ -303,7 +304,6 @@ iva:direccion rdf:type owl:DatatypeProperty ;
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#domicilioFiscal
 iva:domicilioFiscal rdf:type owl:DatatypeProperty ;
-                    rdfs:domain iva:RolSujetoPasivo ;
                     rdfs:range xsd:string .
 
 
@@ -412,14 +412,6 @@ iva:version rdf:type owl:DatatypeProperty ;
 
 ###  http://schema.org/PostalAddress
 <http://schema.org/PostalAddress> rdf:type owl:Class .
-
-
-###  http://schema.org/location
-<http://schema.org/location> rdf:type owl:Class .
-
-
-###  http://schema.org/locationlocation
-schema:location rdf:type owl:Class .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#AdquisicionIntracomunitaria
@@ -806,58 +798,9 @@ iva:AdquisiciónIntracomunitaria rdf:type owl:NamedIndividual ,
                                          iva:ExencionEnOperacionIntracomunitaria .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Aldea_del_Fresno
-iva:Aldea_del_Fresno rdf:type owl:NamedIndividual .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Aleman_S.L
-iva:Aleman_S.L rdf:type owl:NamedIndividual ;
-               iva:emiteFactura iva:Factura_1 ;
-               iva:operacion iva:CompraMateriales .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_1
-iva:Cabecera_1 rdf:type owl:NamedIndividual ;
-               iva:domicilioFiscal iva:Location_1 ;
-               iva:codigoMoneda "EUR"@es ;
-               iva:descripcion "Materiales para montaje de una cadena industrial."@es ;
-               iva:fechaExpedicion "2020-09-01T21:00:00"^^xsd:dateTime ;
-               iva:identificador "EJEMPLO_1"@es ;
-               iva:importe "1149500.0"^^xsd:float .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera_2
-iva:Cabecera_2 rdf:type owl:NamedIndividual ;
-               iva:codigoMoneda "EUR"^^xsd:string ;
-               iva:descripcion "Compra de un reloj e inversión en oro"^^xsd:string ;
-               iva:fechaExpedicion "2021-05-12T12:00:00"^^xsd:dateTime ;
-               iva:identificador "Ejemplo 2"^^xsd:string ;
-               iva:importe "3630.0"^^xsd:float .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#CompraMateriales
-iva:CompraMateriales rdf:type owl:NamedIndividual .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Coruña
-iva:Coruña rdf:type owl:NamedIndividual .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Dependiente_2
-iva:Dependiente_2 rdf:type owl:NamedIndividual ;
-                  iva:tieneRol iva:SujPasivo_2 ;
-                  iva:actividadEmpresarial "4777"^^xsd:string .
-
-
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#EntregaIntracomunitaria
 iva:EntregaIntracomunitaria rdf:type owl:NamedIndividual ,
                                      iva:ExencionEnOperacionIntracomunitaria .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Excures
-iva:Excures rdf:type owl:NamedIndividual ,
-                     iva:RolReceptor ;
-            iva:recibeFactura iva:Factura_1 .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionAnalogaAArancelarias
@@ -964,23 +907,6 @@ iva:ExenciónEnLasExportaciones rdf:type owl:NamedIndividual ,
                                         iva:ExencionEnExportacionDeBienes .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_1
-iva:Factura_1 rdf:type owl:NamedIndividual ;
-              iva:contieneItem iva:MaterialesObra ;
-              iva:tieneCabecera iva:Cabecera_1 ;
-              iva:tieneLugarRealizacion iva:Coruña ;
-              iva:baseImponible "950000.0"^^xsd:float .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura_2
-iva:Factura_2 rdf:type owl:NamedIndividual ;
-              iva:contieneItem iva:Item_Oro ,
-                               iva:Item_Reloj ;
-              iva:tieneCabecera iva:Cabecera_2 ;
-              iva:tieneLugarRealizacion iva:Aldea_del_Fresno ;
-              iva:baseImponible "8000.0"^^xsd:float .
-
-
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#InfraccionEnAdquisiondeBienes
 iva:InfraccionEnAdquisiondeBienes rdf:type owl:NamedIndividual ,
                                            iva:Infraccion ;
@@ -1039,58 +965,14 @@ iva:InfraccionRepercusionImprocedenteEnFactura rdf:type owl:NamedIndividual ,
                                                iva:conductaInfraccion "Repercusión improcedente en factura, por personas que no sean sujetos pasivos del Impuesto, de cuotas impositivas sin que se haya procedido al ingreso de las mismas."@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item_Oro
-iva:Item_Oro rdf:type owl:NamedIndividual ;
-             iva:baseImponible "5000.0"^^xsd:double ;
-             iva:cantidad 1 ;
-             iva:tipoImpositivo "0.0"^^xsd:double .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item_Reloj
-iva:Item_Reloj rdf:type owl:NamedIndividual ;
-               iva:baseImponible "3000.0"^^xsd:double ;
-               iva:cantidad 1 ;
-               iva:tipoImpositivo "21.0"^^xsd:double .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Location_1
-iva:Location_1 rdf:type owl:NamedIndividual ,
-                        <http://schema.org/location> ;
-               iva:domicilioFiscal "Múnich, Alemania"^^xsd:string .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#MaterialesObra
-iva:MaterialesObra rdf:type owl:NamedIndividual ;
-                   iva:cantidad 1 ;
-                   iva:tipoImpositivo "21.0"^^xsd:double .
-
-
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#OperacionAsimiladaAExportaciones
 iva:OperacionAsimiladaAExportaciones rdf:type owl:NamedIndividual ,
                                               iva:ExencionEnExportacionDeBienes .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Operación_2
-iva:Operación_2 rdf:type owl:NamedIndividual ;
-                iva:tieneExencion iva:ExencionRegimenOro .
-
-
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#PequeñosEnvios
 iva:PequeñosEnvios rdf:type owl:NamedIndividual ,
                             iva:ExencionEnImportacionDeBienes .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona_2
-iva:Persona_2 rdf:type owl:NamedIndividual ;
-              iva:tieneRol iva:Receptor_2 ;
-              iva:direccion "Aldea del Fresno"^^xsd:string ;
-              iva:identificadorFiscal "01234567G"^^xsd:string ;
-              iva:nombre "Alfredo Del Bosque Frondoso"^^xsd:string .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Receptor_2
-iva:Receptor_2 rdf:type owl:NamedIndividual ;
-               iva:recibeFactura iva:Factura_2 .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecialInversionEnOro
@@ -1152,13 +1034,6 @@ iva:SancionNoPresentaDeclaracion rdf:type owl:NamedIndividual ,
 iva:SancionRepercusionImprocedenteEnFactura rdf:type owl:NamedIndividual ,
                                                      iva:Sancion ;
                                             rdfs:comment "100%  de  las  cuotas  indebidamente  repercutidas,  con un  mínimo  de  300  euros  por  cada  factura  en  que  se produzca la infracción" .
-
-
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#SujPasivo_2
-iva:SujPasivo_2 rdf:type owl:NamedIndividual ;
-                iva:acogidoARegimenEspecial iva:RegimenEspecialInversionEnOro ;
-                iva:emiteFactura iva:Factura_2 ;
-                iva:operacion iva:Operación_2 .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/iva/tipo-operacion
