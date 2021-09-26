@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#"
+     xml:base="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:iva="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos">
+        <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA -->
+
+    <owl:AnnotationProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#acogidoA"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#direccionPostal -->
+
+    <owl:AnnotationProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#direccionPostal"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion -->
+
+    <owl:AnnotationProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#realizaOperacion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Aldea_del_Fresno -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Aldea_del_Fresno">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Aleman_S.L -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Aleman_S.L">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RolSujetoPasivo"/>
+        <iva:emiteFactura rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Factura_1"/>
+        <iva:realizaOperacion rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#CompraMateriales"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Cabecera_1 -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Cabecera_1">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"/>
+        <iva:domicilioFiscal rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Location_1"/>
+        <iva:codigoMoneda xml:lang="es">EUR</iva:codigoMoneda>
+        <iva:descripcion>Materiales para montaje de una cadena industrial</iva:descripcion>
+        <iva:fechaExpedicion rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-01T21:00:00</iva:fechaExpedicion>
+        <iva:identificador>EJEMPLO_1</iva:identificador>
+        <iva:importe rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1149500.0</iva:importe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Cabecera_2 -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Cabecera_2">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Cabecera"/>
+        <iva:codigoMoneda rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EUR</iva:codigoMoneda>
+        <iva:descripcion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Compra de un reloj e inversión en oro</iva:descripcion>
+        <iva:fechaExpedicion rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-12T12:00:00</iva:fechaExpedicion>
+        <iva:identificador rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ejemplo 2</iva:identificador>
+        <iva:importe rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3630.0</iva:importe>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#CompraMateriales -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#CompraMateriales">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#OperacionSujeta"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Coruña -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Coruña">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Dependiente_2 -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Dependiente_2">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona"/>
+        <iva:actividadEmpresarial rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4777</iva:actividadEmpresarial>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Excures -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Excures">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RolReceptor"/>
+        <iva:recibeFactura rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Factura_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Factura_1 -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Factura_1">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura"/>
+        <iva:contieneItem rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#MaterialesObra"/>
+        <iva:tieneCabecera rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Cabecera_1"/>
+        <iva:tieneLugarRealizacion rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Coruña"/>
+        <iva:baseImponible rdf:datatype="http://www.w3.org/2001/XMLSchema#double">950000.0</iva:baseImponible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Factura_2 -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Factura_2">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Factura"/>
+        <iva:contieneItem rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Item_Oro"/>
+        <iva:contieneItem rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Item_Reloj"/>
+        <iva:tieneCabecera rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Cabecera_2"/>
+        <iva:tieneLugarRealizacion rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Aldea_del_Fresno"/>
+        <iva:baseImponible rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8000.0</iva:baseImponible>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Item_Oro -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Item_Oro">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"/>
+        <iva:baseImponible rdf:datatype="http://www.w3.org/2001/XMLSchema#double">5000.0</iva:baseImponible>
+        <iva:cantidad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</iva:cantidad>
+        <iva:tipoImpositivo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</iva:tipoImpositivo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Item_Reloj -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Item_Reloj">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"/>
+        <iva:baseImponible rdf:datatype="http://www.w3.org/2001/XMLSchema#double">3000.0</iva:baseImponible>
+        <iva:cantidad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</iva:cantidad>
+        <iva:tipoImpositivo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">21.0</iva:tipoImpositivo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Location_1 -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Location_1">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#LugarRealizacion"/>
+        <iva:domicilioFiscal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Múnich, Alemania</iva:domicilioFiscal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#MaterialesObra -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#MaterialesObra">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Item"/>
+        <iva:cantidad rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</iva:cantidad>
+        <iva:tipoImpositivo rdf:datatype="http://www.w3.org/2001/XMLSchema#double">21.0</iva:tipoImpositivo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Operacion_2 -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Operacion_2">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#OperacionSujeta"/>
+        <iva:tieneExencion rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionRegimenOro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Persona_2 -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Persona_2">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#Persona"/>
+        <iva:identificadorFiscal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">01234567G</iva:identificadorFiscal>
+        <iva:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alfredo Del Bosque Frondoso</iva:nombre>
+        <iva:direccionPostal rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aldea del Fresno</iva:direccionPostal>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Receptor_2 -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Receptor_2">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RolReceptor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#SujPasivo_2 -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#SujPasivo_2">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RolSujetoPasivo"/>
+        <iva:emiteFactura rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Factura_2"/>
+        <iva:acogidoA rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#RegimenEspecialInversionEnOro"/>
+        <iva:realizaOperacion rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva-ejemplos#Operacion_2"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
