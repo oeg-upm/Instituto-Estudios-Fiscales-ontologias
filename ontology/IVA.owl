@@ -316,20 +316,20 @@ iva:fechaExpedicion rdf:type owl:DatatypeProperty ;
                     rdfs:label "fecha de expedición"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertosEnExencion
-iva:hechoImponibleCubiertosEnExencion rdf:type owl:DatatypeProperty ;
-                                      rdfs:domain iva:Exencion ;
-                                      rdfs:range xsd:string ;
-                                      rdfs:comment "Hecho Imponible que está cubierto por una exención determinada"@es ;
-                                      rdfs:label "hecho imponible cubierto en una exención"@es .
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleCubiertoEnExencion
+iva:hechoImponibleCubiertoEnExencion rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain iva:Exencion ;
+                                     rdfs:range xsd:string ;
+                                     rdfs:comment "Hecho Imponible que está cubierto por una exención determinada"@es ;
+                                     rdfs:label "hecho imponible cubierto en una exención"@es .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertosEnExencion
-iva:hechoImponibleNoCubiertosEnExencion rdf:type owl:DatatypeProperty ;
-                                        rdfs:domain iva:Exencion ;
-                                        rdfs:range xsd:string ;
-                                        rdfs:comment "Hecho imponible que no está cubierto en una excepción determinada"@es ;
-                                        rdfs:label "Hecho imponible no cubierto en una exención"@es .
+###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#hechoImponibleNoCubiertoEnExencion
+iva:hechoImponibleNoCubiertoEnExencion rdf:type owl:DatatypeProperty ;
+                                       rdfs:domain iva:Exencion ;
+                                       rdfs:range xsd:string ;
+                                       rdfs:comment "Hecho imponible que no está cubierto en una excepción determinada"@es ;
+                                       rdfs:label "Hecho imponible no cubierto en una exención"@es .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#identificador
@@ -827,7 +827,7 @@ iva:ExencionRegimenDepositoDistintoDeAduanero rdf:type owl:NamedIndividual ,
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionRegimenOro
 iva:ExencionRegimenOro rdf:type owl:NamedIndividual ,
                                 iva:ExencionEnRegimenEspecial ;
-                       iva:hechoImponibleCubiertosEnExencion """Las entregas, adquisiciones intracomunitarias e importaciones de oro de inversión. En el concepto de entrega se comprenden los préstamos y las operaciones de permuta financiera, así como los contratos de futuro o a plazo que tengan por objeto oro de inversión e impliquen la transmisión del poder de disposición sobre el mismo. La exención no se aplica a las prestaciones de servicios, con excepción de los servicios de mediación, ni  a  las  adquisiciones  intracomunitarias  cuando  en  el  Estado  miembro  de origen  se  haya  renunciado  a  la exención de la entrega. Cuando el proveedor en origen haya renunciado a la exención de la entrega (exención del  régimen  especial)  se  aplica  la  exención  de  las  entregas  intracomunitarias  y,  por tanto,  la  adquisición intracomunitaria correspondiente estará gravada.
+                       iva:hechoImponibleCubiertoEnExencion """Las entregas, adquisiciones intracomunitarias e importaciones de oro de inversión. En el concepto de entrega se comprenden los préstamos y las operaciones de permuta financiera, así como los contratos de futuro o a plazo que tengan por objeto oro de inversión e impliquen la transmisión del poder de disposición sobre el mismo. La exención no se aplica a las prestaciones de servicios, con excepción de los servicios de mediación, ni  a  las  adquisiciones  intracomunitarias  cuando  en  el  Estado  miembro  de origen  se  haya  renunciado  a  la exención de la entrega. Cuando el proveedor en origen haya renunciado a la exención de la entrega (exención del  régimen  especial)  se  aplica  la  exención  de  las  entregas  intracomunitarias  y,  por tanto,  la  adquisición intracomunitaria correspondiente estará gravada.
  
 Los servicios  de  mediación en  las  operaciones  exentas,  prestados  en  nombre  y  por  cuenta  ajena.  La exención comprende la mediación tanto en nombre del vendedor como en nombre del comprador."""^^xsd:string .
 
@@ -845,7 +845,7 @@ iva:ExencionRelativaARegimenesSuspensivosAduanerosYFiscales rdf:type owl:NamedIn
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosMedicosYSanitarios
 iva:ExencionServiciosMedicosYSanitarios rdf:type owl:NamedIndividual ,
                                                  iva:Exencion ;
-                                        iva:hechoImponibleCubiertosEnExencion """Los servicios de hospitalización o asistencia sanitaria y los relacionados directamente con ellos, realizados por entidades de Derecho público o por entidades privadas en régimen de precios autorizados o comunicados;
+                                        iva:hechoImponibleCubiertoEnExencion """Los servicios de hospitalización o asistencia sanitaria y los relacionados directamente con ellos, realizados por entidades de Derecho público o por entidades privadas en régimen de precios autorizados o comunicados;
 
 La  asistencia  a  personas  físicas  por  profesionales  médicos  o  sanitarios,  cualquiera  que  sea  la  persona destinataria de dichos servicios. La exención comprende las prestaciones de asistencia médica, quirúrgica y sanitaria,relativas  al  diagnóstico,  prevención  y  tratamiento  de  enfermedades,  incluidos  análisis  clínicos  y  exploraciones radiológicas. Esta exención se refiere a los servicios que se prestan fuera de los establecimientos hospitalarios;
 
@@ -856,7 +856,7 @@ Las  prestaciones  de  servicios,  realizadas  en  el  ámbito  de  sus  respect
 El transporte de enfermos o heridos en ambulancia o vehículos especialmente adaptados para ello, incluidos(  DGT  28-4-86  ,  4-6-89  y  DGT  CV  16-7-86  )  los  helicópteros  dedicados  exclusivamente  a  dicha  actividad  y especialmente adaptados. 
 
 Las  entregas  de  bienes  y  prestaciones  de  servicios  que  realiza  la  Seguridad  Social  para  el  cumplimiento  de sus fines, directamente o a través de sus entidades gestoras o colaboradoras, exclusión hecha de las entregas de medicamentos o material sanitario realizadas por cuenta de la Seguridad Social""" ;
-                                        iva:hechoImponibleNoCubiertosEnExencion """Entrega de medicamentos para ser consumidos fuera de los establecimientos señalados.
+                                        iva:hechoImponibleNoCubiertoEnExencion """Entrega de medicamentos para ser consumidos fuera de los establecimientos señalados.
 
 Servicios Veterinarios.
 
@@ -870,7 +870,7 @@ Transporte  realizado  en  autotaxis;  ni  el  servicio  de  transporte  de  ór
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#ExencionServiciosSociales
 iva:ExencionServiciosSociales rdf:type owl:NamedIndividual ,
                                        iva:Exencion ;
-                              iva:hechoImponibleCubiertosEnExencion """La asistencia social, en la que se incluyen los servicios que se indican a continuación:
+                              iva:hechoImponibleCubiertoEnExencion """La asistencia social, en la que se incluyen los servicios que se indican a continuación:
  -  protección de la infancia y juventud, que comprende los servicios de rehabilitación y formación de niños y  jóvenes,  asistencia  a  lactantes,  custodia  y  atención  a  niños  (desde  1-1-2014  se  suprime  la  limitación  de ser menores de seis años de edad), realización de cursos, excursiones y análogos prestados a menores de veinticinco años de edad;
 –   asistencia a la tercera edad;
 –   educación especial y asistencia a personas con discapacidad.
@@ -886,7 +886,7 @@ Cesiones  de  personal  realizadas,  en  el  cumplimiento  de  sus  fines,  por 
 –   Educación, enseñanza, formación y reciclaje profesional
 
 Entidades sin fin lucrativo y colegios profesionales. Están exentas las prestaciones de servicios y entregas de bienes accesorias a las mismas efectuadas directamente a sus miembros por organismos o entidades legalmente reconocidos  que  no  tengan  finalidad  lucrativa,  cuyos  objetivos  sean  de  naturaleza  política,  sindical,  religiosa, patriótica, filantrópica o cívica, realizadas para la consecución de sus finalidades específicas""" ;
-                              iva:hechoImponibleNoCubiertosEnExencion "Entregas de bienes a terceros por los centros ocupacionales ( DGT 5-6-86 );" ;
+                              iva:hechoImponibleNoCubiertoEnExencion "Entregas de bienes a terceros por los centros ocupacionales ( DGT 5-6-86 );" ;
                               iva:precisionSobreExencion """La mediación en los servicios de guarda de niños solo está exenta si el propio servicio de guarda cumple los requisitos para beneficiarse de la exención ( TJUE 9-2-06, C-415/04 ).2)
 
 Ni los cuidadores, ni las empresa de trabajo temporal que ceden a estos empleados, entran en el concepto de «organismos a los que se ha reconocido carácter social», previsto en la Dir 2006/112/CE art.132.1.g ) ( TJUE 12-3-15,C-594/13 ).
@@ -912,7 +912,7 @@ iva:ExenciónEnLasExportaciones rdf:type owl:NamedIndividual ,
 iva:InfraccionEnAdquisiondeBienes rdf:type owl:NamedIndividual ,
                                            iva:Infraccion ;
                                   iva:tieneSancion iva:SancionEnAdquisiciondeBienes ;
-                                  iva:conductaInfraccion "Adquisición   de   bienes   por   parte   de   sujetos   pasivos acogidos al régimen especial del recargo de equivalencia sin que en las correspondientes facturas figure expresamente consignado  el  recargo  de  equivalencia, salvo cuando el adquirente hubiera dado cuenta de ello a la Administración en la forma reglamentada." .
+                                  iva:conductaInfraccion "Adquisición de bienes por parte de sujetos pasivos acogidos al régimen especial del recargo de equivalencia sin que en las correspondientes facturas figure expresamente consignado el recargo de equivalencia, salvo cuando el adquirente hubiera dado cuenta de ello a la Administración en la forma reglamentada." .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#InfraccionEnAutoliquidacion
@@ -942,7 +942,7 @@ iva:InfraccionFaltaComunicacionEntregasPorEjecucion rdf:type owl:NamedIndividual
 iva:InfraccionIncorrectaRepercusionImpuesto rdf:type owl:NamedIndividual ,
                                                      iva:Infraccion ;
                                             iva:tieneSancion iva:SancionIncorrectaRepercusionImpuesto ;
-                                            iva:conductaInfraccion "Obtención, mediante acción u omisión culposa o dolosa, de una incorrecta repercusión del Impuesto, siempre que el destinatario no tenga derecho a la deducción total de las cuotas soportadas. Los infractores serán las personas quesean responsables de la acción u omisión" .
+                                            iva:conductaInfraccion "Obtención, mediante acción u omisión culposa o dolosa, de una incorrecta repercusión del Impuesto, siempre que el destinatario no tenga derecho a la deducción total de las cuotas soportadas. Los infractores serán las personas que sean responsables de la acción u omisión" .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#InfraccionNoConsignacion
