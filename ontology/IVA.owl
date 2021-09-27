@@ -304,6 +304,7 @@ iva:direccion rdf:type owl:DatatypeProperty ;
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/hacienda/iva#domicilioFiscal
 iva:domicilioFiscal rdf:type owl:DatatypeProperty ;
+                    rdfs:domain iva:RolSujetoPasivo ;
                     rdfs:range xsd:string .
 
 
